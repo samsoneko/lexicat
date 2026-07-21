@@ -1,12 +1,12 @@
 :root {
-    --layer-0: #0d0f15;
-    --layer-1: #1c1e26;
-    --layer-2: #30323c;
-    --layer-3: #444652;
+    --layer-0: #121113;
+    --layer-1: #1A191B;
+    --layer-2: #232225;
+    --layer-3: #2B292D;
 
-    --border-radius: 16px;
+    --border-radius: 0.5rem;
     --padding: 16px;
-    --border: 1px solid #3A3F47;
+    --border: 1px solid #49474E;
     --primary-border: none;
     --box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 
@@ -112,6 +112,7 @@ a {
 @media screen and (min-width: 601px) {
 
     .navbar {
+        border: var(--border);
         background-color: var(--layer-2);
         padding: 12px;
         border-radius: var(--border-radius);

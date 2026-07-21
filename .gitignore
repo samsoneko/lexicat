@@ -1,6 +1,20 @@
 node_modules
 /.vscode
 
+# Ignore the local Windows executable
+/pocketbase.exe
+
+# Ignore actual database files and uploaded user files
+pb_data/data.db
+pb_data/data.db-journal
+pb_data/data.db-shm
+pb_data/data.db-wal
+pb_data/storage/
+
+# DO NOT ignore pb_migrations or pb_hooks (if you use them)
+!pb_migrations/
+!pb_hooks/
+
 # Output
 .output
 .vercel

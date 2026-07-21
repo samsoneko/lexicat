@@ -1,6 +1,6 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.png';
-	let { children } = $props();
+	let { data, children } = $props();
 </script>
 
 <svelte:head>
@@ -19,6 +19,21 @@
         <button class="navbar-button" aria-label="Profile">
             <a class="navbar-icon" href="/profile" aria-label="Profile"><i class="fas fa-user"></i> Profile</a>
 		</button>
+
+        <!-- Change what information is displayed based on login status -->
+        {#if data.user}
+            <!-- User is logged in -->
+            <span class="welcome-text">Hi, {data.user.username}</span>
+            
+            <!-- The Logout button form -->
+            <form method="POST" action="/logout">
+                <button type="submit" class="logout-btn">Log Out</button>
+            </form>
+        {:else}
+            <!-- User is logged out -->
+            <a href="/login">Log In</a>
+            <a href="/register" class="register-link">Sign Up</a>
+        {/if}
     </nav>
 
     <div class="app-content">
