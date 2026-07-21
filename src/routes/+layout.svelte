@@ -16,29 +16,20 @@
         <button class="navbar-button" aria-label="Training">
             <a class="navbar-icon" href="/training" aria-label="Training"><i class="fas fa-dumbbell"></i> Training</a>
 		</button>
-        <button class="navbar-button" aria-label="Profile">
-            <a class="navbar-icon" href="/profile" aria-label="Profile"><i class="fas fa-user"></i> Profile</a>
-		</button>
-
-        <!-- Change what information is displayed based on login status -->
         {#if data.user}
             <!-- User is logged in -->
-            <span class="welcome-text">Hi, {data.user.username}</span>
-            
-            <!-- The Logout button form -->
-            <form method="POST" action="/logout">
-                <button type="submit" class="logout-btn">Log Out</button>
-            </form>
+            <button class="navbar-button" aria-label="Profile">
+                <a class="navbar-icon" href="/profile" aria-label="Profile"><i class="fas fa-user"></i> Profile</a>
+            </button>
         {:else}
             <!-- User is logged out -->
             <a href="/login">Log In</a>
-            <a href="/register" class="register-link">Sign Up</a>
         {/if}
 
         <!-- Theme Toggle Form Submit -->
-        <form method="POST" action="/api/theme">
+        <form method="POST" action="/api/theme" style="display: inline">
             <input type="hidden" name="theme" value={data.theme} />
-            <button type="submit" class="theme-btn">
+            <button type="submit" class="navbar-button">
                 {data.theme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode'}
             </button>
         </form>

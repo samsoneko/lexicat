@@ -109,6 +109,16 @@ a {
     color: var(--icon-color);
 }
 
+.button-default {
+    padding: 8px;
+    border: var(--border);
+    background-color: var(--layer-2);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
 @media screen and (min-width: 601px) {
 
     .navbar {
