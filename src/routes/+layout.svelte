@@ -34,6 +34,14 @@
             <a href="/login">Log In</a>
             <a href="/register" class="register-link">Sign Up</a>
         {/if}
+
+        <!-- Theme Toggle Form Submit -->
+        <form method="POST" action="/api/theme">
+            <input type="hidden" name="theme" value={data.theme} />
+            <button type="submit" class="theme-btn">
+                {data.theme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode'}
+            </button>
+        </form>
     </nav>
 
     <div class="app-content">

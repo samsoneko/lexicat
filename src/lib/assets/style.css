@@ -34,7 +34,7 @@
     --accent-brown: #B08968;
 }
 
-.light-theme {
+body.light-theme {
     --layer-0: #e2e2e5;
     --layer-1: #ffffff;
     --layer-2: #f0f0f2;

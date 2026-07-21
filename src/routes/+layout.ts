@@ -1,7 +1,8 @@
 import { redirect } from '@sveltejs/kit';
 
 export function load({ data, url }) {
-    const user = data?.user; 
+    const user = data?.user;
+    const theme = data?.theme;
     
     const isLoginPage = url.pathname === '/login';
     const isRegisterPage = url.pathname === '/register';
@@ -15,5 +16,5 @@ export function load({ data, url }) {
         throw redirect(303, '/dashboard');
     }
 
-    return { user };
+    return { user, theme };
 }

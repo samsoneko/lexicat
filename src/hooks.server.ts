@@ -27,13 +27,21 @@ export async function handle({ event, resolve }) {
         event.locals.user = null;
     }
 
-    // Process the request
-    const response = await resolve(event);
+    // Determine the active theme (User profile choice -> or standalone cookie -> fallback to dark)
+    const cookieTheme = event.cookies.get('theme');
+    const userTheme = event.locals.user?.theme;
+    event.locals.theme = userTheme || cookieTheme || 'dark';
 
-    // Export the latest auth cookie back to the browser
-    response.headers.set(
+    const themeClassName = `${event.locals.theme}-theme`;
+
+    // Inject the theme class directly into the <html> tag
+    const response = await resolve(event, {
+        transformPageChunk: ({ html }) => html.replace('%theme%', themeClassName)
+    });
+
+    response.headers.append(
         'set-cookie', 
-        event.locals.pb.authStore.exportToCookie({ secure: false }) // set secure: true in production
+        event.locals.pb.authStore.exportToCookie({ secure: false })
     );
 
     return response;

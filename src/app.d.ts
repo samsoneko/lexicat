@@ -6,6 +6,7 @@ declare global {
 		interface Locals {
             pb: import('pocketbase').default;
             user: import('pocketbase').default['authStore']['model'];
+            theme: 'light' | 'dark'; // Add this line here
         }
 		// interface PageData {}
 		// interface PageState {}
