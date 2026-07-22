@@ -22,6 +22,7 @@
 		"vite": "^8.0.16"
 	},
 	"dependencies": {
+		"fs": "^0.0.1-security",
 		"pocketbase": "^0.27.0"
 	}
 }

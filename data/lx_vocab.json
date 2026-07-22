@@ -1,0 +1,62 @@
+[
+{
+	"word": "valén",
+	"translation": "hello",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"word": "janta",
+	"translation": "bye",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"word": "lean",
+	"translation": "flower",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"word": "ritón",
+	"translation": "book",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"word": "tala",
+	"translation": "blue",
+	"info": "",
+	"part_of_speech": "adjective"
+},
+{
+	"word": "acóno",
+	"translation": "red",
+	"info": "",
+	"part_of_speech": "adjective"
+},
+{
+	"word": "aló",
+	"translation": "to read",
+	"info": "",
+	"part_of_speech": "verb"
+},
+{
+	"word": "noró",
+	"translation": "to eat",
+	"info": "",
+	"part_of_speech": "verb"
+},
+{
+	"word": "so",
+	"translation": "to walk",
+	"info": "",
+	"part_of_speech": "verb"
+},
+{
+	"word": "caní",
+	"translation": "to sleep",
+	"info": "",
+	"part_of_speech": "verb"
+}
+]

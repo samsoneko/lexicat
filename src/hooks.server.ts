@@ -1,6 +1,5 @@
 // src/hooks.server.js
 import PocketBase from 'pocketbase';
-import { redirect } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
 
 // Run function on every request

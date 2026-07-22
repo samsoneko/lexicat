@@ -1,0 +1,126 @@
+[
+{
+	"chapter_title": "Introduction",
+	"description": "Getting to know casual greetings and important words.",
+	"index": 0,
+	"lessons": [
+	{
+		"title": "Casual greetings",
+		"type": "vocab",
+		"index": 0,
+		"exercises": [
+		{
+			"type": "info",
+			"content": {
+				"title": "Saying hello and goodbye",
+				"text": "When greeting other people, the most important term is 'valén' ('hello'). To see someone of, the most common term is 'janta' ('bye')."
+			}
+		},
+		{
+			"type": "vocab",
+			"content": {
+				"options": ["valén", "janta"]
+			}
+		},
+		{
+			"type": "multiple_choice",
+			"content": {
+				"prompt": "How do you say 'hello'?",
+				"options": ["valén", "janta"],
+				"answer": "valén"
+			}
+		},
+		{
+			"type": "multiple_choice",
+			"content": {
+				"prompt": "How do you say 'goodbye'?",
+				"options": ["valén", "janta"],
+				"answer": "janta"
+			}
+		}
+		]
+	},
+	{
+		"title": "Basic word order",
+		"type": "grammar",
+		"index": 1,
+		"exercises": [
+		{
+			"type": "info",
+			"content": {
+				"title": "Modifying adjectives",
+				"text": "When modifying adjectives, the word order of Lexin is opposite to the one found in English. Instead of saying something like 'blue book', one would place the adjective after the noun, such as in 'lean-acóno' (lit. 'flower-red')."
+			}
+		},
+		{
+			"type": "vocab",
+			"content": {
+				"options": ["lean", "ritón", "tala", "acóno"]
+			}
+		},
+		{
+			"type": "arrange",
+			"content": {
+				"prompt": "How do you say 'red flower'?",
+				"options": ["lean", "acóno"],
+				"answer": "lean acóno"
+			}
+		},
+		{
+			"type": "arrange",
+			"content": {
+				"prompt": "How do you say 'blue book'?",
+				"options": ["ritón", "tala"],
+				"answer": "ritón tala"
+			}
+		}
+		]
+	}
+	]
+},
+{
+	"chapter_title": "Temporal forms",
+	"description": "Learning how to use basic temporal forms.",
+	"index": 1,
+	"lessons": [
+	{
+		"title": "Present tense",
+		"type": "grammar",
+		"index": 0,
+		"exercises": [
+		{
+			"type": "info",
+			"content": {
+				"ph": "ph"
+			}
+		},
+		{
+			"type": "multiple_choice",
+			"content": {
+				"ph": "ph"
+			}
+		}
+		]
+	},
+	{
+		"title": "Past tense",
+		"type": "grammar",
+		"index": 1,
+		"exercises": [
+		{
+			"type": "info",
+			"content": {
+				"ph": "ph"
+			}
+		},
+		{
+			"type": "multiple_choice",
+			"content": {
+				"ph": "ph"
+			}
+		}
+		]
+	}
+	]
+}
+]
