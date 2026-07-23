@@ -2,15 +2,16 @@
 {
 	"chapter_title": "Introduction",
 	"description": "Getting to know casual greetings and important words.",
-	"index": 0,
+	"index": 1,
 	"lessons": [
 	{
 		"title": "Casual greetings",
 		"type": "vocab",
-		"index": 0,
+		"index": 1,
 		"exercises": [
 		{
 			"type": "info",
+			"index": 1,
 			"content": {
 				"title": "Saying hello and goodbye",
 				"text": "When greeting other people, the most important term is 'valén' ('hello'). To see someone of, the most common term is 'janta' ('bye')."
@@ -18,12 +19,14 @@
 		},
 		{
 			"type": "vocab",
+			"index": 2,
 			"content": {
 				"options": ["valén", "janta"]
 			}
 		},
 		{
 			"type": "multiple_choice",
+			"index": 3,
 			"content": {
 				"prompt": "How do you say 'hello'?",
 				"options": ["valén", "janta"],
@@ -32,6 +35,7 @@
 		},
 		{
 			"type": "multiple_choice",
+			"index": 4,
 			"content": {
 				"prompt": "How do you say 'goodbye'?",
 				"options": ["valén", "janta"],
@@ -43,10 +47,11 @@
 	{
 		"title": "Basic word order",
 		"type": "grammar",
-		"index": 1,
+		"index": 2,
 		"exercises": [
 		{
 			"type": "info",
+			"index": 1,
 			"content": {
 				"title": "Modifying adjectives",
 				"text": "When modifying adjectives, the word order of Lexin is opposite to the one found in English. Instead of saying something like 'blue book', one would place the adjective after the noun, such as in 'lean-acóno' (lit. 'flower-red')."
@@ -54,12 +59,14 @@
 		},
 		{
 			"type": "vocab",
+			"index": 2,
 			"content": {
 				"options": ["lean", "ritón", "tala", "acóno"]
 			}
 		},
 		{
 			"type": "arrange",
+			"index": 3,
 			"content": {
 				"prompt": "How do you say 'red flower'?",
 				"options": ["lean", "acóno"],
@@ -68,6 +75,7 @@
 		},
 		{
 			"type": "arrange",
+			"index": 4,
 			"content": {
 				"prompt": "How do you say 'blue book'?",
 				"options": ["ritón", "tala"],
@@ -81,21 +89,23 @@
 {
 	"chapter_title": "Temporal forms",
 	"description": "Learning how to use basic temporal forms.",
-	"index": 1,
+	"index": 2,
 	"lessons": [
 	{
 		"title": "Present tense",
 		"type": "grammar",
-		"index": 0,
+		"index": 1,
 		"exercises": [
 		{
 			"type": "info",
+			"index": 1,
 			"content": {
 				"ph": "ph"
 			}
 		},
 		{
 			"type": "multiple_choice",
+			"index": 2,
 			"content": {
 				"ph": "ph"
 			}
@@ -105,16 +115,18 @@
 	{
 		"title": "Past tense",
 		"type": "grammar",
-		"index": 1,
+		"index": 2,
 		"exercises": [
 		{
 			"type": "info",
+			"index": 1,
 			"content": {
 				"ph": "ph"
 			}
 		},
 		{
 			"type": "multiple_choice",
+			"index": 2,
 			"content": {
 				"ph": "ph"
 			}

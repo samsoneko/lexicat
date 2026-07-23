@@ -50,7 +50,8 @@ async function importData() {
 				await pb.collection('exercises').create({
 					lesson: lessonRecord.id,
 					type: ex.type,
-					content: ex.content
+					content: ex.content,
+					index: ex.index
 				});
 			}
 		}
