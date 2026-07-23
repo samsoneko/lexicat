@@ -4,8 +4,10 @@
 	let { data, children } = $props();
 </script>
 
+{#if data.user}
 <h1>Hi, {data.user.username}!</h1>
 <p>On this page, you find your lessons</p>
+{/if}
 
 {#if data.chapters.length === 0}
     <p>No content available yet.</p>
