@@ -1,11 +1,19 @@
 <script>
-	let {isCorrect = $bindable(), content} = $props();
+	let {isCorrect = $bindable(), content, score = $bindable()} = $props();
 
     let selectedAnswer = "";
+    let alreadyTried = false;
 
     function checkAnswer() {
         if (selectedAnswer === content["answer"]) {
-            isCorrect = true;
+            if (!alreadyTried) {
+                isCorrect = true;
+                score += 1;
+            } else {
+                isCorrect = true;
+            }
+        } else {
+            alreadyTried = true;
         }
     }
 
@@ -19,6 +27,8 @@
     </button>
 {/each}
 
-<button onclick={checkAnswer} >
-    Check Answer
-</button>
+{#if !isCorrect}
+    <button onclick={checkAnswer} >
+        Check Answer
+    </button>
+{/if}

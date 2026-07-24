@@ -1,5 +1,5 @@
 <script>
-	let {isCorrect = $bindable(), content} = $props();
+	let {isCorrect = $bindable(), content, score = $bindable()} = $props();
 
     function checkAnswer() {
         isCorrect = true;
@@ -9,6 +9,8 @@
 
 {content}
 
+{#if !isCorrect}
 <button onclick={checkAnswer} >
     Check Answer
 </button>
+{/if}

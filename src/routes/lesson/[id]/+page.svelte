@@ -1,18 +1,19 @@
 <script lang="ts">
     import { readable } from 'svelte/store';
+    import { goto } from '$app/navigation';
     import InfoLesson from "$lib/components/InfoLesson.svelte";
     import MultichoiceLesson from "$lib/components/MultichoiceLesson.svelte";
     import ArrangeLesson from "$lib/components/ArrangeLesson.svelte";
     import VocabLesson from "$lib/components/VocabLesson.svelte";
 
-	let { data, children } = $props();
+	let { data } = $props();
 
     // Exercise state tracking
     let currentIndex = $state(0);
     let isCorrect = $state(false);
     let lessonComplete = $state(false);
 
-    let score = 0;
+    let score = $state(0);
 
     let currentExercise = $derived(data.exercises[currentIndex]);
     let progressPercentage = $derived((currentIndex / data.exercises.length) * 100);
@@ -27,18 +28,21 @@
         isCorrect = false;
     }
 
-    // Placeholder for later API result submission
-    // async function submitResults() {
-    //     const finalPercentage = Math.round((score / data.exercises.length) * 100);
+    // API result submission function
+    async function submitResults() {
+        const scorableLessons = data.exercises.filter((exercise: { type: string }) => exercise.type === 'info' || exercise.type === 'vocab').length;
+        const finalPercentage = Math.round((score / scorableLessons) * 100);
         
-    //     await fetch(`/api/lesson-complete`, {
-    //         method: 'POST',
-    //         body: JSON.stringify({
-    //             lessonId: data.lessonId,
-    //             score: finalPercentage
-    //         })
-    //     });
-    // }
+        await fetch(`/api/lesson-complete`, {
+            method: 'POST',
+            body: JSON.stringify({
+                lessonId: data.lessonId,
+                score: finalPercentage
+            })
+        });
+
+        goto('/');
+    }
 </script>
 
 
@@ -61,19 +65,22 @@
                 {:else if currentExercise.type === 'vocab'}
                     <VocabLesson content={currentExercise.content} bind:isCorrect />
                 {:else if currentExercise.type === 'multiple_choice'}
-                    <MultichoiceLesson content={currentExercise.content} bind:isCorrect />
+                    <MultichoiceLesson content={currentExercise.content} bind:score bind:isCorrect />
                 {:else if currentExercise.type === 'arrange'}
-                    <ArrangeLesson content={currentExercise.content} bind:isCorrect />
+                    <ArrangeLesson content={currentExercise.content} bind:score bind:isCorrect />
                 {/if}
             </div>
         </section>
 
-        {isCorrect}
-        <button disabled={!isCorrect} onclick={nextQuestion} >
-            Next exercise
-        </button>
+        {#if isCorrect}
+            <button disabled={!isCorrect} onclick={nextQuestion} >
+                Next exercise
+            </button>
+        {/if}
     {/if}
 {:else}
     Lesson complete
-    <a href="/">Back to Home</a>
+    <button onclick={submitResults} >
+        End lesson
+    </button>
 {/if}

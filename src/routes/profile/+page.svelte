@@ -1,7 +1,7 @@
 <script lang="ts">
     import { readable } from 'svelte/store';
 
-	let { data, children } = $props();
+	let { data } = $props();
 </script>
 
 <h1>Profile</h1>
