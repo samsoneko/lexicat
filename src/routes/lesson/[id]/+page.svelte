@@ -6,6 +6,7 @@
     import MultichoiceExercise from "$lib/components/MultichoiceExercise.svelte";
     import ArrangeExercise from "$lib/components/ArrangeExercise.svelte";
     import WordBankExercise from "$lib/components/WordBankExercise.svelte";
+    import TranslateExercise from '$lib/components/TranslateExercise.svelte';
 
 	let { data } = $props();
 
@@ -72,6 +73,8 @@
                     <ArrangeExercise content={currentExercise.content} bind:score bind:isCorrect />
                 {:else if currentExercise.type === 'word_bank'}
                     <WordBankExercise content={currentExercise.content} bind:score bind:isCorrect />
+                {:else if currentExercise.type === 'translate'}
+                    <TranslateExercise content={currentExercise.content} bind:score bind:isCorrect />
                 {/if}
             </div>
         </section>
