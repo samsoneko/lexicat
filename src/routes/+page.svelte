@@ -2,6 +2,8 @@
     import { readable } from 'svelte/store';
 
 	let { data } = $props();
+
+    const completedLessonIds = new Set(data.statistics.map(entry => entry.lesson));
 </script>
 
 {#if data.user}
@@ -16,23 +18,29 @@
         <!-- Chapter Header Container -->
         <section>
             <div>
-                <span>
+                <h2>
                     Chapter {chapter.index}
-                </span>
-                <h2>{chapter.title}</h2>
+                </h2>
+                <h3>{chapter.title}</h3>
             </div>
 
             <!-- Lessons Grid / Stack Layout -->
             <div>
                 {#each chapter.lessons as lesson}
-                    <a href="/lesson/{lesson.id}">
                         <div>
                             <!-- Type Icon Anchor -->
                             <div>
                                 <p>{#if lesson.type === 'vocab'}📝{:else if lesson.type === 'grammar'}🗣️{:else}🌟{/if} {lesson.title} ({lesson.type} Lesson)</p>
+                                <a href="/lesson/{lesson.id}">
+                                    {#if completedLessonIds.has(lesson.id)}
+                                        Review
+                                    {:else}
+                                        Start
+                                    {/if}
+                                </a>
                             </div>
                         </div>
-                    </a>
+                    
                 {/each}
             </div>
         </section>

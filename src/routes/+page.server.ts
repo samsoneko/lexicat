@@ -2,8 +2,14 @@ import type { PageServerLoad } from './$types';
 import { error } from '@sveltejs/kit';
 
 export const load: PageServerLoad = async ({ locals }) => {
+    // Authentication
+    if (!locals.pb.authStore.isValid || !locals.pb.authStore.record) {
+        throw error(401, 'Unauthorized request.');
+    }
+
     // Hardcoded ID for now
-    const COURSE_ID = 'lx'; 
+    const COURSE_ID = 'lx';
+    const userId = locals.pb.authStore.record.id;
 
     try {
         // Fetch the course and expand its chapters and lessons
@@ -17,6 +23,11 @@ export const load: PageServerLoad = async ({ locals }) => {
         // Extract the nested data
         const chapters = courseData.expand?.['chapters_via_course'] || [];
 
+        // Fetch total number of completed lessons for updating tree
+        const userHistory = await locals.pb.collection('completed_lessons').getFullList({
+            filter: `user = "${userId}"`
+        });
+
         return {
             chapters: chapters.map((chapter: any) => ({
                 id: chapter.id,
@@ -24,6 +35,11 @@ export const load: PageServerLoad = async ({ locals }) => {
                 index: chapter.index,
                 // Extract lessons inside this specific chapter
                 lessons: chapter.expand?.['lessons_via_chapter'] || []
+            })),
+            statistics: userHistory.map((entry: any) => ({
+                lesson: entry.lesson,
+                score: entry.score,
+                time: entry.created
             }))
         };
 
