@@ -1,8 +1,8 @@
 <script>
 	let {isCorrect = $bindable(), content, score = $bindable()} = $props();
 
-    let selectedAnswer = "";
-    let alreadyTried = false;
+    let selectedAnswer = $state("");
+    let alreadyTried = $state(false);
 
     function checkAnswer() {
         if (selectedAnswer === content["answer"]) {
@@ -12,6 +12,7 @@
             } else {
                 isCorrect = true;
             }
+			alreadyTried = false;
         } else {
             alreadyTried = true;
         }
@@ -21,14 +22,19 @@
 
 <h3>{content["prompt"]}</h3>
 
-{#each content["options"] as option}
-    <button onclick={() => selectedAnswer = option}>
-        {option}
-    </button>
-{/each}
-
 {#if !isCorrect}
-    <button onclick={checkAnswer} >
+    {#each content["options"] as option}
+        <button class="button-default" onclick={() => selectedAnswer = option}>
+            {option}
+        </button>
+    {/each}
+    
+    <button class="button-default" onclick={checkAnswer} disabled={selectedAnswer === ""}>
         Check Answer
     </button>
+    {#if alreadyTried}
+        <p>Wrong!</p>
+    {/if}
+{:else}
+    <p>Correct!</p>
 {/if}

@@ -100,14 +100,31 @@
 			"type": "info",
 			"index": 1,
 			"content": {
-				"ph": "ph"
+				"title": "Forming the present tense",
+				"text": "When forming the present tense, one of many endings is attached to the word."
 			}
 		},
 		{
-			"type": "multiple_choice",
+			"type": "vocab",
 			"index": 2,
 			"content": {
-				"ph": "ph"
+				"options": ["aló", "noró"]
+			}
+		},
+		{
+			"type": "translate",
+			"index": 3,
+			"content": {
+				"prompt": "How do you say 'I read'?",
+				"answer": "alója"
+			}
+		},
+		{
+			"type": "translate",
+			"index": 4,
+			"content": {
+				"prompt": "How do you say 'she eats'?",
+				"answer": "noróva"
 			}
 		}
 		]
@@ -121,14 +138,33 @@
 			"type": "info",
 			"index": 1,
 			"content": {
-				"ph": "ph"
+				"title": "Modifying adjectives",
+				"text": "When modifying adjectives, the word order of Lexin is opposite to the one found in English. Instead of saying something like 'blue book', one would place the adjective after the noun, such as in 'lean-acóno' (lit. 'flower-red')."
 			}
 		},
 		{
-			"type": "multiple_choice",
+			"type": "vocab",
 			"index": 2,
 			"content": {
-				"ph": "ph"
+				"options": ["so", "caní"]
+			}
+		},
+		{
+			"type": "word_bank",
+			"index": 3,
+			"content": {
+				"prompt": "How do you say 'we walked'?",
+				"options": ["so", "jo", "ja", "jono"],
+				"answer": "sojono"
+			}
+		},
+		{
+			"type": "word_bank",
+			"index": 4,
+			"content": {
+				"prompt": "How do you say 'they slept'?",
+				"options": ["caní", "so", "von", "jono"],
+				"answer": "canívon"
 			}
 		}
 		]

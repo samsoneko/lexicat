@@ -3,7 +3,7 @@ import fs from 'fs';
 
 const pb = new PocketBase('http://127.0.0.1:8090');
 // Authenticate as admin to bypass collection API rules
-await pb.admins.authWithPassword('PH', 'PH');
+await pb.admins.authWithPassword('', '');
 
 const vocab = JSON.parse(fs.readFileSync('lx_vocab.json', 'utf-8'));
 const curriculum = JSON.parse(fs.readFileSync('lx_curriculum.json', 'utf-8'));
