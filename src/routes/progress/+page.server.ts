@@ -19,7 +19,7 @@ export const load: PageServerLoad = async ({ locals }) => {
         });
 
         return {
-            statistics: userHistory.map((entry: any) => ({
+            progress: userHistory.map((entry: any) => ({
                 lesson: entry.lesson,
                 score: entry.score,
                 time: entry.created

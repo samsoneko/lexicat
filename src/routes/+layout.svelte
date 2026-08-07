@@ -16,8 +16,8 @@
         <button class="navbar-button" aria-label="Training">
             <a class="navbar-icon" href="/training" aria-label="Training"><i class="fas fa-dumbbell"></i> Training</a>
 		</button>
-        <button class="navbar-button" aria-label="Statistics">
-            <a class="navbar-icon" href="/statistics" aria-label="Statistics"><i class="fas fa-chart-line"></i> Statistics</a>
+        <button class="navbar-button" aria-label="Progress">
+            <a class="navbar-icon" href="/progress" aria-label="Progress"><i class="fas fa-chart-line"></i> Progress</a>
 		</button>
         {#if data.user}
             <!-- User is logged in -->
