@@ -7,16 +7,15 @@ export const load: PageServerLoad = async ({ locals }) => {
         throw error(401, 'Unauthorized request.');
     }
 
-    // Hardcoded ID for now
-    const COURSE_ID = 'lx';
+    const COURSE_ID = locals.pb.authStore.record.course;
     const userId = locals.pb.authStore.record.id;
 
     // Update user statistics
     try {
 
-        // Fetch total number of completed lessons
+        // Fetch total number of completed lessons for the current course
         const userHistory = await locals.pb.collection('completed_lessons').getFullList({
-            filter: `user = "${userId}"`
+            filter: `user = "${userId}" && lesson.chapter.course = "${COURSE_ID}"`
         });
 
         return {

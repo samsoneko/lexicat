@@ -1,6 +1,4 @@
 <script lang="ts">
-    import { readable } from 'svelte/store';
-
 	let { data } = $props();
 </script>
 
@@ -20,4 +18,6 @@
     <form method="POST" action="/logout">
         <button type="submit" class="button-default">Log Out</button>
     </form>
+
+    <a href="/course">Change Course</a>
 {/if}

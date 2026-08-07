@@ -37,7 +37,7 @@ export const actions = {
             });
         }
 
-        // Redirect to the protected homepage
-        throw redirect(303, '/');
+        // Redirect to the course selection after registration
+        throw redirect(303, '/course');
     }
 };

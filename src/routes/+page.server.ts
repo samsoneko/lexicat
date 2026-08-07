@@ -7,8 +7,7 @@ export const load: PageServerLoad = async ({ locals }) => {
         throw error(401, 'Unauthorized request.');
     }
 
-    // Hardcoded ID for now
-    const COURSE_ID = 'lx';
+    const COURSE_ID = locals.pb.authStore.record.course;
     const userId = locals.pb.authStore.record.id;
 
     try {
