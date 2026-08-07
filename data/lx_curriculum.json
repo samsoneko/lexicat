@@ -83,6 +83,28 @@
 			}
 		}
 		]
+	},
+	{
+		"title": "Words for family",
+		"type": "vocab",
+		"index": 3,
+		"exercises": [
+		{
+			"type": "vocab",
+			"index": 1,
+			"content": {
+				"options": ["manya", "yana", "tanvo", "yada"]
+			}
+		},
+		{
+			"type": "pairs",
+			"index": 2,
+			"content": {
+				"options": [["manya", "yana", "tanvo", "yada"], ["mother", "mom", "father", "dad"]],
+				"answer": [["manya", "mother"], ["yana", "mom"], ["tanvo", "father"], ["yada", "dad"]]
+			}
+		}
+		]
 	}
 	]
 },

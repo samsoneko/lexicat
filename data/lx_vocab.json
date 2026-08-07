@@ -58,5 +58,29 @@
 	"translation": "to sleep",
 	"info": "",
 	"part_of_speech": "verb"
+},
+{
+	"word": "manya",
+	"translation": "mother",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"word": "yana",
+	"translation": "mom",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"word": "tanvo",
+	"translation": "father",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"word": "yada",
+	"translation": "dad",
+	"info": "",
+	"part_of_speech": "noun"
 }
 ]
