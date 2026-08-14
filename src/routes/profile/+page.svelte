@@ -7,7 +7,7 @@
 <!-- Change what information is displayed based on login status -->
 {#if data.user}
     <!-- User is logged in -->
-    <span class="welcome-text">Hi, {data.user.username}! Nice to see you today.</span>
+    <span>Hi, {data.user.username}! Nice to see you today.</span>
 
     <h3>Account Information</h3>
     <p>Username: {data.user.username}</p>

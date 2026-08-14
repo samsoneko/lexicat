@@ -21,7 +21,7 @@
     let currentExercise = $derived(data.exercises[currentIndex]);
     let progressPercentage = $derived((currentIndex / data.exercises.length) * 100);
     
-    const scorableLessons = $derived(data.exercises.filter((exercise: { type: string }) => exercise.type === 'info' || exercise.type === 'vocab').length);
+    const scorableLessons = $derived(data.exercises.filter((exercise: { type: string }) => exercise.type !== 'info' && exercise.type !== 'vocab').length);
 
     function nextQuestion() {
         if (currentIndex < data.exercises.length - 1) {
@@ -31,6 +31,7 @@
             currentIndex += 1;
         }
         isCorrect = false;
+        console.dir(scorableLessons);
     }
 
     // API result submission function
@@ -60,7 +61,7 @@
         <!-- Debug for now -->
         <section>
             <div>
-                <h2>Exercise {currentExercise.index}</h2>
+                <h2>Part {currentExercise.index}</h2>
                 <h3>{currentExercise.type}</h3>
             </div>
 

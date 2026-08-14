@@ -22,38 +22,32 @@ export const POST: RequestHandler = async ({ request, locals }) => {
         });
 
         const lessonWordIds: string[] = lesson.words || [];
-        if (lessonWordIds.length === 0) {
-            console.log("This lesson does not contain words to add");
-            return;
-        }
+        if (lessonWordIds.length !== 0) {
+            // Build query string to retrieve all already existing user words for the lesson
+            const idFilterString = lessonWordIds.map(id => `word = "${id}"`).join(' || ');
+            const fullFilter = `user = "${userId}" && (${idFilterString})`;
 
-        // Build query string to retrieve all already existing user words for the lesson
-        const idFilterString = lessonWordIds.map(id => `word = "${id}"`).join(' || ');
-        const fullFilter = `user = "${userId}" && (${idFilterString})`;
-
-        // Retrieve user words and check which new words are missing
-        const existingUserWords = await locals.pb.collection('user_words').getFullList({
-            filter: fullFilter,
-            fields: 'word', // Only linked vocabulary is necessary
-        });
-        const existingWordIdsSet = new Set(existingUserWords.map(uw => uw.word));
-        const missingWordIds = lessonWordIds.filter(id => !existingWordIdsSet.has(id));
-
-        if (missingWordIds.length === 0) {
-            console.log("All lesson words are already present in the user words");
-            return;
-        }
-
-        // Add all new words to the user words
-        for (const wordId of missingWordIds) {
-            await locals.pb.collection('user_words').create({
-                user: userId,
-                word: wordId,
-                interval: 0,
-                ease_factor: 2.5,
-                repetitions: 0,
-                next_review: new Date()
+            // Retrieve user words and check which new words are missing
+            const existingUserWords = await locals.pb.collection('user_words').getFullList({
+                filter: fullFilter,
+                fields: 'word', // Only linked vocabulary is necessary
             });
+            const existingWordIdsSet = new Set(existingUserWords.map(uw => uw.word));
+            const missingWordIds = lessonWordIds.filter(id => !existingWordIdsSet.has(id));
+
+            if (missingWordIds.length !== 0) {
+                // Add all new words to the user words
+                for (const wordId of missingWordIds) {
+                    await locals.pb.collection('user_words').create({
+                        user: userId,
+                        word: wordId,
+                        interval: 0,
+                        ease_factor: 2.5,
+                        repetitions: 0,
+                        next_review: new Date()
+                    });
+                }
+            }
         }
 
         // Create record in completed_lessons collection
