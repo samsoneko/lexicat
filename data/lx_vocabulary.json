@@ -1,83 +1,97 @@
 [
 {
+	"slug": "lx:valen",
 	"word": "valén",
 	"translation": "hello",
 	"info": "",
 	"part_of_speech": "noun"
 },
 {
+	"slug": "lx:janta",
 	"word": "janta",
 	"translation": "bye",
 	"info": "",
 	"part_of_speech": "noun"
 },
 {
+	"slug": "lx:lean",
 	"word": "lean",
 	"translation": "flower",
 	"info": "",
 	"part_of_speech": "noun"
 },
 {
+	"slug": "lx:riton",
 	"word": "ritón",
 	"translation": "book",
 	"info": "",
 	"part_of_speech": "noun"
 },
 {
+	"slug": "lx:tala",
 	"word": "tala",
 	"translation": "blue",
 	"info": "",
 	"part_of_speech": "adjective"
 },
 {
+	"slug": "lx:acono",
 	"word": "acóno",
 	"translation": "red",
 	"info": "",
 	"part_of_speech": "adjective"
 },
 {
+	"slug": "lx:alo",
 	"word": "aló",
 	"translation": "to read",
 	"info": "",
 	"part_of_speech": "verb"
 },
 {
+	"slug": "lx:noro",
 	"word": "noró",
 	"translation": "to eat",
 	"info": "",
 	"part_of_speech": "verb"
 },
 {
+	"slug": "lx:so",
 	"word": "so",
 	"translation": "to walk",
 	"info": "",
 	"part_of_speech": "verb"
 },
 {
+	"slug": "lx:cani",
 	"word": "caní",
 	"translation": "to sleep",
 	"info": "",
 	"part_of_speech": "verb"
 },
 {
+	"slug": "lx:manya",
 	"word": "manya",
 	"translation": "mother",
 	"info": "",
 	"part_of_speech": "noun"
 },
 {
+	"slug": "lx:yana",
 	"word": "yana",
 	"translation": "mom",
 	"info": "",
 	"part_of_speech": "noun"
 },
 {
+	"slug": "lx:tanvo",
 	"word": "tanvo",
 	"translation": "father",
 	"info": "",
 	"part_of_speech": "noun"
 },
 {
+	"slug": "lx:yada",
 	"word": "yada",
 	"translation": "dad",
 	"info": "",

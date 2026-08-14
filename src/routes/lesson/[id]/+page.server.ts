@@ -32,6 +32,7 @@ export const load: PageServerLoad = async ({ params, locals }) => {
         return {
             lessonTitle: lessonData.title,
             lessonId: lessonData.id,
+            words: lessonData.words,
             exercises
         };
 

@@ -1,6 +1,6 @@
 [
 {
-	"chapter_title": "Introduction",
+	"title": "Introduction",
 	"description": "Getting to know casual greetings and important words.",
 	"index": 1,
 	"lessons": [
@@ -8,6 +8,7 @@
 		"title": "Casual greetings",
 		"type": "vocab",
 		"index": 1,
+		"words" : ["lx:valen", "lx:janta"],
 		"exercises": [
 		{
 			"type": "info",
@@ -48,6 +49,7 @@
 		"title": "Basic word order",
 		"type": "grammar",
 		"index": 2,
+		"words" : ["lx:lean", "lx:riton", "lx:tala", "lx:acono"],
 		"exercises": [
 		{
 			"type": "info",
@@ -88,6 +90,7 @@
 		"title": "Words for family",
 		"type": "vocab",
 		"index": 3,
+		"words" : ["lx:manya", "lx:tanvo", "lx:yana", "lx:yada"],
 		"exercises": [
 		{
 			"type": "vocab",
@@ -109,7 +112,7 @@
 	]
 },
 {
-	"chapter_title": "Temporal forms",
+	"title": "Temporal forms",
 	"description": "Learning how to use basic temporal forms.",
 	"index": 2,
 	"lessons": [
@@ -117,6 +120,7 @@
 		"title": "Present tense",
 		"type": "grammar",
 		"index": 1,
+		"words" : ["lx:alo", "lx:noro"],
 		"exercises": [
 		{
 			"type": "info",
@@ -155,6 +159,7 @@
 		"title": "Past tense",
 		"type": "grammar",
 		"index": 2,
+		"words" : ["lx:so", "lx:cani"],
 		"exercises": [
 		{
 			"type": "info",

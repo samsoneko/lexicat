@@ -23,6 +23,6 @@
 	},
 	"dependencies": {
 		"fs": "^0.0.1-security",
-		"pocketbase": "^0.27.0"
+		"pocketbase": "^0.27.1"
 	}
 }

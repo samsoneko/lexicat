@@ -41,6 +41,7 @@
             method: 'POST',
             body: JSON.stringify({
                 lessonId: data.lessonId,
+                words: data.words,
                 score: finalPercentage
             })
         });
