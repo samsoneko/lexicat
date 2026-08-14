@@ -14,16 +14,13 @@ export const load: PageServerLoad = async ({ locals }) => {
     try {
         // Fetch all user words for the current user and course
         const userWords = await locals.pb.collection('user_words').getFullList({
-            filter: `user = "${userId}" && word.course = "${COURSE_ID}"`,
-            expand: 'word'
+            filter: `user = "${userId}" && word.course = "${COURSE_ID}"`
         });
-        console.log(userWords)
 
         return {
             wordMap: userWords.map((entry: any) => ({
-                slug: entry.expand.word.slug,
-                word: entry.expand.word.word,
-                interval: entry.interval
+                interval: entry.interval,
+                updated: entry.updated
             }))
         };
         

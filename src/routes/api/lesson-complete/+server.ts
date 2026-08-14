@@ -9,7 +9,7 @@ export const POST: RequestHandler = async ({ request, locals }) => {
 
     const COURSE_ID = locals.pb.authStore.record.course; // Not even necessary because all words over all courses are unique
     const userId = locals.pb.authStore.record.id;
-    const { lessonId, words, score } = await request.json();
+    const { lessonId, score } = await request.json();
 
     if (!lessonId || score === undefined) {
         throw error(400, 'Missing required parameters.');
