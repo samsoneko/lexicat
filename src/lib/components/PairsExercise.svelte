@@ -1,5 +1,5 @@
 <script>
-	let {isCorrect = $bindable(), content, score = $bindable()} = $props();
+	let {isCorrect = $bindable(), vocab = $bindable(), content, score = $bindable()} = $props();
 
 	// Create two word pools for the pairs
 	const wordPool = content.answer

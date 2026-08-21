@@ -1,6 +1,6 @@
 <!-- Minor variation of the arrange exercise, where some of the available words can be optional -->
 <script>
-	let {isCorrect = $bindable(), content, score = $bindable()} = $props();
+	let {isCorrect = $bindable(), vocab = $bindable(), content, score = $bindable()} = $props();
 
 	const uniqueBlocks = $derived(content.options.map((word, index) => ({id: index,text: word})));
 

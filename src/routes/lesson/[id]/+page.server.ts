@@ -12,6 +12,20 @@ export const load: PageServerLoad = async ({ params, locals }) => {
             // Sort exercises by their index
             sort: 'expand.exercises_via_lesson.index'
         });
+
+        // Fetch all vocab data for the course to serve as a dictionary during the exercises
+        const vocabData = await locals.pb.collection('vocabulary').getFullList({
+            filter: `course = "${locals.user.course}"`
+        });
+
+        const vocabulary = vocabData.map((vocab: any) => ({
+            slug: vocab.slug,
+            word: vocab.word,
+            translation: vocab.translation,
+            info: vocab.info,
+            pos: vocab.part_of_speech
+        }));
+
         // Extract and format the exercise records
         const rawExercises = lessonData.expand?.['exercises_via_lesson'] || [];
         
@@ -33,7 +47,8 @@ export const load: PageServerLoad = async ({ params, locals }) => {
             lessonTitle: lessonData.title,
             lessonId: lessonData.id,
             words: lessonData.words,
-            exercises
+            exercises,
+            vocabulary
         };
 
     } catch (err: any) {

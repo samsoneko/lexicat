@@ -67,19 +67,19 @@
 
             <div>
                 {#if currentExercise.type === 'info'}
-                    <InfoExercise content={currentExercise.content} bind:isCorrect/>
+                    <InfoExercise content={currentExercise.content} vocab={data.vocabulary} bind:isCorrect/>
                 {:else if currentExercise.type === 'vocab'}
-                    <VocabExercise content={currentExercise.content} bind:isCorrect />
+                    <VocabExercise content={currentExercise.content} vocab={data.vocabulary} bind:isCorrect />
                 {:else if currentExercise.type === 'multiple_choice'}
-                    <MultichoiceExercise content={currentExercise.content} bind:score bind:isCorrect />
+                    <MultichoiceExercise content={currentExercise.content} vocab={data.vocabulary} bind:score bind:isCorrect />
                 {:else if currentExercise.type === 'arrange'}
-                    <ArrangeExercise content={currentExercise.content} bind:score bind:isCorrect />
+                    <ArrangeExercise content={currentExercise.content} vocab={data.vocabulary} bind:score bind:isCorrect />
                 {:else if currentExercise.type === 'word_bank'}
-                    <WordBankExercise content={currentExercise.content} bind:score bind:isCorrect />
+                    <WordBankExercise content={currentExercise.content} vocab={data.vocabulary} bind:score bind:isCorrect />
                 {:else if currentExercise.type === 'translate'}
-                    <TranslateExercise content={currentExercise.content} bind:score bind:isCorrect />
+                    <TranslateExercise content={currentExercise.content} vocab={data.vocabulary} bind:score bind:isCorrect />
                 {:else if currentExercise.type === 'pairs'}
-                    <PairsExercise content={currentExercise.content} bind:score bind:isCorrect />
+                    <PairsExercise content={currentExercise.content} vocab={data.vocabulary} bind:score bind:isCorrect />
                 {/if}
             </div>
         </section>

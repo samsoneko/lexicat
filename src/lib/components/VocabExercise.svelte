@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	let {isCorrect = $bindable(), content} = $props();
+	let {isCorrect = $bindable(), vocab = $bindable(), content} = $props();
 
     onMount(() => {
         isCorrect = true;
