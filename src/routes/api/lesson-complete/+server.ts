@@ -43,8 +43,7 @@ export const POST: RequestHandler = async ({ request, locals }) => {
                         word: wordId,
                         interval: 0,
                         ease_factor: 2.5,
-                        repetitions: 0,
-                        next_review: new Date()
+                        repetitions: 0
                     });
                 }
             }

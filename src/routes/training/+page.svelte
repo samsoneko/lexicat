@@ -10,9 +10,9 @@
 		let totalVocabulary = JSON.parse(JSON.stringify(data.wordMap)); // Create deep copy
         let todaysVocabulary : Object[] = [];
 		for (const word of totalVocabulary) {
-            const updatedDay = new Date(word.updated).getDate();
-            const reviewDay = new Date(Date.now() + (60 * 60 * 24 * word.interval * 1000)).getDate();
-            if (updatedDay === reviewDay) {
+            const reviewDay = new Date(Date.parse(word.updated) + (60 * 60 * 24 * word.interval * 1000));
+            const currentDay = new Date(Date.now());
+            if (new Date(reviewDay).setHours(0, 0, 0, 0) <= new Date(currentDay).setHours(0, 0, 0, 0)) {
                 todaysVocabulary.push(word);
             }
         }
