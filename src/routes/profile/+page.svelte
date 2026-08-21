@@ -13,6 +13,14 @@
     <p>Username: {data.user.username}</p>
     <p>Email: {data.user.email}</p>
     <p>Date registered: {data.user.created}</p>
+
+    <!-- Theme Toggle Form Submit -->
+    <form method="POST" action="/api/theme" style="display: inline">
+        <input type="hidden" name="theme" value={data.theme} />
+        <button type="submit" class="button-default">
+            {data.theme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode'}
+        </button>
+    </form>
     
     <!-- The Logout button form -->
     <form method="POST" action="/logout">

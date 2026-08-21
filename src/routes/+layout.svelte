@@ -28,14 +28,6 @@
             <!-- User is logged out -->
             <a href="/login">Log In</a>
         {/if}
-
-        <!-- Theme Toggle Form Submit -->
-        <form method="POST" action="/api/theme" style="display: inline">
-            <input type="hidden" name="theme" value={data.theme} />
-            <button type="submit" class="navbar-button">
-                {data.theme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode'}
-            </button>
-        </form>
     </nav>
 
     <div class="app-content">
