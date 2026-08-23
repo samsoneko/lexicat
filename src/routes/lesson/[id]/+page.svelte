@@ -9,6 +9,8 @@
     import TranslateExercise from '$lib/components/TranslateExercise.svelte';
     import PairsExercise from '$lib/components/PairsExercise.svelte';
 
+    import LessonProgressBar from '$lib/components/LessonProgressBar.svelte';
+
 	let { data } = $props();
 
     // Exercise state tracking
@@ -19,7 +21,6 @@
     let score = $state(0);
 
     let currentExercise = $derived(data.exercises[currentIndex]);
-    let progressPercentage = $derived((currentIndex / data.exercises.length) * 100);
     
     const scorableLessons = $derived(data.exercises.filter((exercise: { type: string }) => exercise.type !== 'info' && exercise.type !== 'vocab').length);
 
@@ -51,8 +52,7 @@
     }
 </script>
 
-
-<p>{progressPercentage}%</p>
+<LessonProgressBar totalAnswerCount={data.exercises.length} currentAnswerCount={currentIndex}/>
 
 {#if !lessonComplete}
     {#if data.exercises.length === 0}

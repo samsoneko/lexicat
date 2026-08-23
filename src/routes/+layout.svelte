@@ -13,13 +13,13 @@
 	<nav class="navbar">
         <button class={['navbar-button', page.url.pathname === '/' ? 'active' : '']} aria-label="Home">
             <a class="navbar-icon" href="/" aria-label="Home"><i class="fas fa-home"></i> Home</a>
-		</button>
+        </button>
         <button class={['navbar-button', page.url.pathname === '/training' ? 'active' : '']} aria-label="Training">
             <a class="navbar-icon" href="/training" aria-label="Training"><i class="fas fa-dumbbell"></i> Training</a>
-		</button>
+        </button>
         <button class={['navbar-button', page.url.pathname === '/progress' ? 'active' : '']} aria-label="Progress">
             <a class="navbar-icon" href="/progress" aria-label="Progress"><i class="fas fa-chart-line"></i> Progress</a>
-		</button>
+        </button>
         {#if data.user}
             <!-- User is logged in -->
             <button class={['navbar-button', page.url.pathname === '/profile' ? 'active' : '']} aria-label="Profile">
@@ -27,7 +27,9 @@
             </button>
         {:else}
             <!-- User is logged out -->
-            <a href="/login">Log In</a>
+            <button class='navbar-button' aria-label="Log In">
+                <a class="navbar-icon" href="/login"><i class="fas fa-right-to-bracket"></i> Log In</a>
+            </button>
         {/if}
     </nav>
 
