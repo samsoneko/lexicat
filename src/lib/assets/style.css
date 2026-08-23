@@ -15,6 +15,9 @@
 
     --text-color: white;
     --link-color: lightskyblue;
+
+    --teal-900: #134f4b;
+    --teal-700: #00766e;
 }
 
 body.light-theme {

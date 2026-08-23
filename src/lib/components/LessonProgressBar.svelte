@@ -46,6 +46,6 @@
         width: calc(var(--progress) * 100%);
         height: 20px;
         border-radius: 8px;
-        background-color: var(--active-color);
+        background-color: var(--teal-900);
     }
 </style>
