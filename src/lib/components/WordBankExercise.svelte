@@ -44,7 +44,7 @@
 {#if !isCorrect}
 	<div>
 		{#each selectedWords as word}
-			<button class="button-default" onclick={() => deselectWord(word)}>
+			<button class="button-option" onclick={() => deselectWord(word)}>
 				{word.text}
 			</button>
 		{/each}
@@ -55,15 +55,17 @@
 
 	<div>
 		{#each wordPool as word}
-			<button class="button-default" onclick={() => selectWord(word)}>
+			<button class="button-option" onclick={() => selectWord(word)}>
 				{word.text}
 			</button>
 		{/each}
 	</div>
 	
-    <button class="button-default" onclick={checkAnswer} disabled={selectedWords.length === 0}>
-        Check Answer
-    </button>
+	<div>
+		<button class="button-default" onclick={checkAnswer} disabled={selectedWords.length === 0}>
+			Check Answer
+		</button>
+	</div>
 
     {#if alreadyTried}
         <p>Wrong!</p>

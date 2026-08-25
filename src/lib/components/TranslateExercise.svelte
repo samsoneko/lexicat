@@ -5,7 +5,7 @@
     let alreadyTried = $state(false);
 
     function checkAnswer() {
-        if (currentAnswer.toLowerCase() === content["answer"].toLowerCase()) { // Compare lowercase strings
+        if (currentAnswer.toLowerCase().replaceAll(' ', '') === content["answer"].toLowerCase().replaceAll(' ', '')) { // Compare lowercase strings
             if (!alreadyTried) {
                 isCorrect = true;
                 score += 1;

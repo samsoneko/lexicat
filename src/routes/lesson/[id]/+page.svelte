@@ -27,11 +27,13 @@
     function nextQuestion() {
         if (currentIndex < data.exercises.length - 1) {
             currentIndex += 1;
+            if (data.exercises[currentIndex].type !== "info" && data.exercises[currentIndex].type !== "vocab") {
+                isCorrect = false;
+            }
         } else {
             lessonComplete = true;
             currentIndex += 1;
         }
-        isCorrect = false;
         console.dir(scorableLessons);
     }
 
@@ -61,8 +63,7 @@
         <!-- Debug for now -->
         <section>
             <div>
-                <h2>Part {currentExercise.index}</h2>
-                <h3>{currentExercise.type}</h3>
+                <h2>Part {currentExercise.index} - {String(currentExercise.type).charAt(0).toUpperCase() + String(currentExercise.type).slice(1).replaceAll('_', ' ')}</h2>
             </div>
 
             <div>

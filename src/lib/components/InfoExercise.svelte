@@ -9,4 +9,4 @@
 </script>
 
 <h3>{content["title"]}</h3>
-<p>{content["text"]}</p>
+<p>{@html content["text"]}</p>

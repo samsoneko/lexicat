@@ -49,7 +49,7 @@
                     <div class='lesson-panel' style='--block-color:{getChapterColor(chapter.index)}; --offset:{getHorizontalOffset(chapter.lessons.length, lesson.index)}px'>
                         <div>
                             {#if lesson.type === 'vocab'}
-                                <i class="lesson-icon fas fa-language"></i>
+                                <i class="lesson-icon fas fa-book"></i>
                             {:else if lesson.type === 'grammar'}
                                 <i class="lesson-icon fas fa-spell-check"></i>
                             {:else if lesson.type === 'review'}
@@ -118,19 +118,20 @@
     }
 
     .lesson-subtitle {
-        color: var(--subtext-color);
+        color: rgba(255, 255, 255, 0.5);
         font-size: 1rem;
         margin: 0px;
     }
 
     .lesson-title {
         font-size: 1rem;
+        color: white;
         margin: 0px;
     }
 
     .lesson-start-button {
         background-color: rgba(0, 0, 0, 0.4);
-        color: var(--text-color);
+        color: white;
         box-shadow: var(--box-shadow);
         border-radius: var(--border-radius);
         padding: 10px;

@@ -58,20 +58,25 @@
 <h2>Select the matching pairs</h2>
 
 {#if !isCorrect}
-	{#each wordPool as word (word.id)}
-		{#if !matchedPairIds.has(word.pairId)}
-			<button disabled={matchedPairIds.has(word.pairId)} onclick={() => handleCardClick(word)}>
-				{word.text}
-			</button>
-		{/if}
-	{/each}
-	{#each translationPool as word (word.id)}
-		{#if !matchedPairIds.has(word.pairId)}
-			<button disabled={matchedPairIds.has(word.pairId)} onclick={() => handleCardClick(word)}>
-				{word.text}
-			</button>
-		{/if}
-	{/each}
+	<div>
+		{#each wordPool as word (word.id)}
+			{#if !matchedPairIds.has(word.pairId)}
+				<button class="button-option" disabled={matchedPairIds.has(word.pairId)} onclick={() => handleCardClick(word)}>
+					{word.text}
+				</button>
+			{/if}
+		{/each}
+	</div>
+	<hr>
+	<div>
+		{#each translationPool as word (word.id)}
+			{#if !matchedPairIds.has(word.pairId)}
+				<button class="button-option" disabled={matchedPairIds.has(word.pairId)} onclick={() => handleCardClick(word)}>
+					{word.text}
+				</button>
+			{/if}
+		{/each}
+	</div>
 {:else}
     <p>Correct!</p>
 {/if}

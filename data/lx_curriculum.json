@@ -231,7 +231,7 @@
                         "content": {
                             "prompt": "How do you say 'The woman is a human'?",
                             "options": ["selén", "va", "lecu"],
-                            "answer": "ara va cen"
+                            "answer": "selén va lecu"
                         }
                     },
                     {
@@ -240,7 +240,7 @@
                         "content": {
                             "prompt": "How do you say 'It is an object'?",
                             "options": ["ara", "va", "cen", "lecu"],
-                            "answer": "va lecu"
+                            "answer": "va cen"
                         }
                     },
                     {

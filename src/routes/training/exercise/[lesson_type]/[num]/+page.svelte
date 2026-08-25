@@ -44,7 +44,7 @@
         <!-- Debug for now -->
         <section>
             <div>
-                <h2>Exercise {currentIndex}</h2>
+                <h2>Exercise {currentIndex+1}</h2>
                 <h3>{currentExercise.type}</h3>
             </div>
 

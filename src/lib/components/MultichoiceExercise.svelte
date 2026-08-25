@@ -24,14 +24,16 @@
 
 {#if !isCorrect}
     {#each content["options"] as option}
-        <button class="button-default" onclick={() => selectedAnswer = option}>
+        <button class="button-option" onclick={() => selectedAnswer = option}>
             {option}
         </button>
     {/each}
     
-    <button class="button-default" onclick={checkAnswer} disabled={selectedAnswer === ""}>
-        Check Answer
-    </button>
+    <div>
+        <button class="button-default" onclick={checkAnswer} disabled={selectedAnswer === ""}>
+            Check Answer
+        </button>
+    </div>
     {#if alreadyTried}
         <p>Wrong!</p>
     {/if}

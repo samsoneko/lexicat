@@ -30,7 +30,7 @@ body.light-theme {
     --hover-color: #e7e7e7;
     --active-color: #91c5ff;
 
-    --border: 0px solid #CCD3DC;
+    --border: 1px solid #e7e8e9;
     --box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 
     --text-color: black;
@@ -72,7 +72,7 @@ a {
 }
 
 .button-default {
-    padding: 8px;
+    padding: 12px;
     border: var(--border);
     background-color: var(--layer-1);
     color: var(--text-color);
@@ -81,8 +81,32 @@ a {
     cursor: pointer;
 }
 
+.button-option {
+    padding: 12px;
+    margin: 4px;
+    border: var(--border);
+    background-color: var(--layer-1);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
 .center-text {
     text-align: center;
+}
+
+hr {
+    border: var(--border);
+}
+
+input {
+    border: var(--border);
+    background-color: var(--layer-1);
+    padding: 12px;
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
 }
 
 @media screen and (min-width: 601px) {
