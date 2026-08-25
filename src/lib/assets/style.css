@@ -14,6 +14,7 @@
     --box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 
     --text-color: white;
+    --subtext-color: rgba(255, 255, 255, 0.5);
     --link-color: lightskyblue;
 
     --teal-900: #134f4b;
@@ -33,6 +34,7 @@ body.light-theme {
     --box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 
     --text-color: black;
+    --subtext-color: rgba(0, 0, 0, 0.5);
     --link-color: darkblue;
 }
 

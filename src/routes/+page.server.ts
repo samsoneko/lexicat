@@ -32,6 +32,7 @@ export const load: PageServerLoad = async ({ locals }) => {
                 id: chapter.id,
                 title: chapter.title,
                 index: chapter.index,
+                description: chapter.description,
                 // Extract lessons inside this specific chapter
                 lessons: chapter.expand?.['lessons_via_chapter'] || []
             })),

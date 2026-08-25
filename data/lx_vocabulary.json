@@ -1,100 +1,373 @@
 [
 {
-	"slug": "lx:valen",
+	"slug": "lx:dea",
+	"word": "dea",
+	"translation": "I am",
+	"info": "",
+	"part_of_speech": "verb"
+},
+{
+	"slug": "lx:jan",
+	"word": "jan",
+	"translation": "You are",
+	"info": "",
+	"part_of_speech": "verb"
+},
+{
+	"slug": "lx:va",
+	"word": "va",
+	"translation": "He / she is",
+	"info": "",
+	"part_of_speech": "verb"
+},
+{
+	"slug": "lx:deana",
+	"word": "deana",
+	"translation": "We are",
+	"info": "",
+	"part_of_speech": "verb"
+},
+{
+	"slug": "lx:lecu",
+	"word": "lecu",
+	"translation": "Human",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:selén",
+	"word": "selén",
+	"translation": "Woman",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:curán",
+	"word": "curán",
+	"translation": "Man",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:cen",
+	"word": "cen",
+	"translation": "Thing / Object",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:ara",
+	"word": "ara",
+	"translation": "This / That",
+	"info": "",
+	"part_of_speech": "pronoun"
+},
+{
+	"slug": "lx:sayá",
+	"word": "sayá",
+	"translation": "Yes",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:jiné",
+	"word": "jiné",
+	"translation": "No",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:valén",
 	"word": "valén",
-	"translation": "hello",
+	"translation": "Hello",
 	"info": "",
 	"part_of_speech": "noun"
 },
 {
 	"slug": "lx:janta",
 	"word": "janta",
-	"translation": "bye",
+	"translation": "Bye",
 	"info": "",
 	"part_of_speech": "noun"
 },
 {
-	"slug": "lx:lean",
-	"word": "lean",
-	"translation": "flower",
+	"slug": "lx:seyén",
+	"word": "seyén",
+	"translation": "Thank you",
 	"info": "",
 	"part_of_speech": "noun"
 },
 {
-	"slug": "lx:riton",
-	"word": "ritón",
-	"translation": "book",
+	"slug": "lx:moyán",
+	"word": "moyán",
+	"translation": "Please",
 	"info": "",
 	"part_of_speech": "noun"
 },
 {
-	"slug": "lx:tala",
-	"word": "tala",
-	"translation": "blue",
-	"info": "",
-	"part_of_speech": "adjective"
+	"slug": "lx:la",
+	"word": "la",
+	"translation": "Question particle",
+	"info": "Used in questions in different roles",
+	"part_of_speech": "other"
 },
 {
-	"slug": "lx:acono",
-	"word": "acóno",
-	"translation": "red",
-	"info": "",
-	"part_of_speech": "adjective"
+	"slug": "lx:to",
+	"word": "to",
+	"translation": "Emphasis particle",
+	"info": "Emphasizes words in a question",
+	"part_of_speech": "other"
 },
 {
-	"slug": "lx:alo",
-	"word": "aló",
-	"translation": "to read",
+	"slug": "lx:yato",
+	"word": "yato",
+	"translation": "Who",
 	"info": "",
-	"part_of_speech": "verb"
+	"part_of_speech": "pronoun"
 },
 {
-	"slug": "lx:noro",
+	"slug": "lx:yarato",
+	"word": "yarato",
+	"translation": "What",
+	"info": "",
+	"part_of_speech": "pronoun"
+},
+{
+	"slug": "lx:noró",
 	"word": "noró",
-	"translation": "to eat",
+	"translation": "To eat",
 	"info": "",
 	"part_of_speech": "verb"
 },
 {
-	"slug": "lx:so",
-	"word": "so",
-	"translation": "to walk",
+	"slug": "lx:le",
+	"word": "le",
+	"translation": "To drink",
 	"info": "",
 	"part_of_speech": "verb"
 },
 {
-	"slug": "lx:cani",
-	"word": "caní",
-	"translation": "to sleep",
+	"slug": "lx:no",
+	"word": "no",
+	"translation": "To have",
 	"info": "",
 	"part_of_speech": "verb"
+},
+{
+	"slug": "lx:yeva",
+	"word": "yeva",
+	"translation": "Water",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:naco",
+	"word": "naco",
+	"translation": "Bread",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:voro",
+	"word": "voro",
+	"translation": "Meat",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:yen",
+	"word": "yen",
+	"translation": "Good",
+	"info": "",
+	"part_of_speech": "adjective"
+},
+{
+	"slug": "lx:vonta",
+	"word": "vonta",
+	"translation": "Bad",
+	"info": "",
+	"part_of_speech": "adjective"
+},
+{
+	"slug": "lx:nou",
+	"word": "nou",
+	"translation": "Big",
+	"info": "",
+	"part_of_speech": "adjective"
+},
+{
+	"slug": "lx:voli",
+	"word": "voli",
+	"translation": "Hot",
+	"info": "",
+	"part_of_speech": "adjective"
+},
+{
+	"slug": "lx:run",
+	"word": "run",
+	"translation": "Moon",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:don",
+	"word": "don",
+	"translation": "Tree",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:catu",
+	"word": "catu",
+	"translation": "Animal",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:nava",
+	"word": "nava",
+	"translation": "Night",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:yoré",
+	"word": "yoré",
+	"translation": "To want",
+	"info": "",
+	"part_of_speech": "verb"
+},
+{
+	"slug": "lx:yendé",
+	"word": "yendé",
+	"translation": "To must",
+	"info": "",
+	"part_of_speech": "verb"
+},
+{
+	"slug": "lx:ta",
+	"word": "ta",
+	"translation": "To go",
+	"info": "",
+	"part_of_speech": "verb"
+},
+{
+	"slug": "lx:tayé",
+	"word": "tayé",
+	"translation": "To come",
+	"info": "",
+	"part_of_speech": "verb"
+},
+{
+	"slug": "lx:co",
+	"word": "co",
+	"translation": "To see",
+	"info": "",
+	"part_of_speech": "verb"
+},
+{
+	"slug": "lx:veala",
+	"word": "veala",
+	"translation": "House",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:dana",
+	"word": "dana",
+	"translation": "City",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:ye",
+	"word": "ye",
+	"translation": "To / Towards",
+	"info": "",
+	"part_of_speech": "adverb"
+},
+{
+	"slug": "lx:majé",
+	"word": "majé",
+	"translation": "From",
+	"info": "",
+	"part_of_speech": "adverb"
 },
 {
 	"slug": "lx:manya",
 	"word": "manya",
-	"translation": "mother",
-	"info": "",
-	"part_of_speech": "noun"
-},
-{
-	"slug": "lx:yana",
-	"word": "yana",
-	"translation": "mom",
+	"translation": "Mother",
 	"info": "",
 	"part_of_speech": "noun"
 },
 {
 	"slug": "lx:tanvo",
 	"word": "tanvo",
-	"translation": "father",
+	"translation": "Father",
 	"info": "",
 	"part_of_speech": "noun"
 },
 {
-	"slug": "lx:yada",
-	"word": "yada",
-	"translation": "dad",
+	"slug": "lx:mida",
+	"word": "mida",
+	"translation": "Friend",
 	"info": "",
 	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:suréda",
+	"word": "suréda",
+	"translation": "Acquaintance",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:sa",
+	"word": "sa",
+	"translation": "From / Of",
+	"info": "Possession particle",
+	"part_of_speech": "other"
+},
+{
+	"slug": "lx:saví",
+	"word": "saví",
+	"translation": "My / Of me",
+	"info": "",
+	"part_of_speech": "pronoun"
+},
+{
+	"slug": "lx:sacá",
+	"word": "sacá",
+	"translation": "Your / Of you",
+	"info": "",
+	"part_of_speech": "pronoun"
+},
+{
+	"slug": "lx:sienda",
+	"word": "sienda",
+	"translation": "Name",
+	"info": "",
+	"part_of_speech": "noun"
+},
+{
+	"slug": "lx:conto",
+	"word": "conto",
+	"translation": "Where",
+	"info": "",
+	"part_of_speech": "adverb"
+},
+{
+	"slug": "lx:ayó",
+	"word": "ayó",
+	"translation": "Here",
+	"info": "",
+	"part_of_speech": "adverb"
+},
+{
+	"slug": "lx:acó",
+	"word": "acó",
+	"translation": "There",
+	"info": "",
+	"part_of_speech": "adverb"
 }
 ]

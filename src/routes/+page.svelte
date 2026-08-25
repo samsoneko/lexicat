@@ -35,23 +35,33 @@
         <!-- Chapter Header Container -->
         <section>
             <div>
-                <h2 class="center-text">
+                <h2 class="chapter-title">
                     Chapter {chapter.index} - {chapter.title}
                 </h2>
+                <p class="chapter-description">
+                    {chapter.description}
+                </p>
             </div>
 
             <!-- Lessons Grid / Stack Layout -->
             <div class='chapter-section'>
                 {#each chapter.lessons as lesson}
                     <div class='lesson-panel' style='--block-color:{getChapterColor(chapter.index)}; --offset:{getHorizontalOffset(chapter.lessons.length, lesson.index)}px'>
-                        {#if lesson.type === 'vocab'}
-                            <i class="lesson-icon fas fa-language"></i>
-                        {:else if lesson.type === 'grammar'}
-                            <i class="lesson-icon fas fa-spell-check"></i>
-                        {:else}
-                            <i class="lesson-icon fas fa-question"></i>
-                        {/if}
-                        <p class='lesson-title'>{lesson.title}</p>
+                        <div>
+                            {#if lesson.type === 'vocab'}
+                                <i class="lesson-icon fas fa-language"></i>
+                            {:else if lesson.type === 'grammar'}
+                                <i class="lesson-icon fas fa-spell-check"></i>
+                            {:else if lesson.type === 'review'}
+                                <i class="lesson-icon fas fa-repeat"></i>
+                            {:else}
+                                <i class="lesson-icon fas fa-question"></i>
+                            {/if}
+                            <div class='lesson-textarea'>
+                                <p class='lesson-subtitle'>Lesson {chapter.index}.{lesson.index} - {String(lesson.type).charAt(0).toUpperCase() + String(lesson.type).slice(1)}</p>
+                                <p class='lesson-title'>{lesson.title}</p>
+                            </div>
+                        </div>
                         <a class='lesson-start-button' href="/lesson/{lesson.id}">
                             {#if completedLessonIds.has(lesson.id)}
                                 Review
@@ -74,30 +84,57 @@
         place-items: center;
     }
 
+    .chapter-title {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .chapter-description {
+        text-align: center;
+        color: var(--subtext-color);
+        margin-top: 8px;
+        margin-bottom: 32px;
+    }
+
     .lesson-panel {
         background-color: var(--block-color);
-        width: fit-content;
-        padding: var(--padding);
+        padding: 12px;
+        width: 360px;
         border-radius: var(--border-radius);
         margin: 0px 0px 16px var(--offset);
+        display: flex;
+        justify-content: space-between;
     }
 
     .lesson-icon {
-        color: rgba(0, 0, 0, 0.5);
+        color: rgba(0, 0, 0, 0.4);
+        font-size: 2.5rem;
+        margin-right: 12px;
+    }
+
+    .lesson-textarea {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .lesson-subtitle {
+        color: var(--subtext-color);
         font-size: 1rem;
+        margin: 0px;
     }
 
     .lesson-title {
-        display: inline;
         font-size: 1rem;
+        margin: 0px;
     }
 
     .lesson-start-button {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.4);
         color: var(--text-color);
         box-shadow: var(--box-shadow);
         border-radius: var(--border-radius);
-        padding: 8px;
+        padding: 10px;
         cursor: pointer;
+        width: 50px;
     }
 </style>
