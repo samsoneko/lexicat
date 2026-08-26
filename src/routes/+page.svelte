@@ -19,6 +19,33 @@
 
         return sinOffset;
     }
+
+    // Checks if all previous lessons have already been completed for a lesson
+    function isLessonUnlocked(l_index = 0, c_index = 0) {
+        if (c_index === 0) {
+            if (l_index === 0) {
+                return true
+            }
+            else {
+                if (completedLessonIds.has(data.chapters[c_index].lessons[l_index-1].id)) {
+                    return true
+                }
+            }
+        }
+        else {
+            if (l_index === 0) {
+                if (completedLessonIds.has(data.chapters[c_index-1].lessons.slice(-1)[0].id)) {
+                    return true
+                }
+            }
+            else {
+                if (completedLessonIds.has(data.chapters[c_index].lessons[l_index-1].id)) {
+                    return true
+                }
+            }
+        }
+        return false
+    }
 </script>
 
 <div class="chapter-section">
@@ -31,7 +58,7 @@
 {#if data.chapters.length === 0}
     <p>No content available yet.</p>
 {:else}
-    {#each data.chapters as chapter}
+    {#each data.chapters as chapter, c_index}
         <!-- Chapter Header Container -->
         <section>
             <div>
@@ -45,8 +72,8 @@
 
             <!-- Lessons Grid / Stack Layout -->
             <div class='chapter-section'>
-                {#each chapter.lessons as lesson}
-                    <div class='lesson-panel' style='--block-color:{getChapterColor(chapter.index)}; --offset:{getHorizontalOffset(chapter.lessons.length, lesson.index)}px'>
+                {#each chapter.lessons as lesson, l_index}
+                    <div class='lesson-panel' style='--block-color:{isLessonUnlocked(l_index, c_index) === true ? getChapterColor(chapter.index) : 'grey'}; --offset:{getHorizontalOffset(chapter.lessons.length, lesson.index)}px'>
                         <div>
                             {#if lesson.type === 'vocab'}
                                 <i class="lesson-icon fas fa-book"></i>
@@ -62,13 +89,15 @@
                                 <p class='lesson-title'>{lesson.title}</p>
                             </div>
                         </div>
-                        <a class='lesson-start-button' href="/lesson/{lesson.id}">
-                            {#if completedLessonIds.has(lesson.id)}
-                                Review
-                            {:else}
-                                Start
-                            {/if}
-                        </a>
+                        {#if isLessonUnlocked(l_index, c_index)}
+                            <a class='lesson-start-button' href="/lesson/{lesson.id}">
+                                {#if completedLessonIds.has(lesson.id)}
+                                    Review
+                                {:else}
+                                    Start
+                                {/if}
+                            </a>
+                        {/if}
                     </div>
                 {/each}
             </div>
