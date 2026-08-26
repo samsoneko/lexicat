@@ -38,7 +38,7 @@
 
 </script>
 
-<h2>{content["prompt"]}</h2>
+<h2>{@html content["prompt"]}</h2>
 
 {#if !isCorrect}
 	<div>

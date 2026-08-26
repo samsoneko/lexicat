@@ -28,4 +28,8 @@
     </form>
 
     <a href="/course">Change Course</a>
+
+    <form method="POST" action="?/deleteAccount">
+        <button type="submit" class="button-default" onclick={(event) => {if(!confirm('Do you really want to delete your account?')) {event.preventDefault();}}}>Delete my account</button>
+    </form>
 {/if}

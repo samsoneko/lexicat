@@ -26,8 +26,9 @@
 <p>Your vocabulary is already {data.wordMap.length} words large!</p>
 <p>You have {todaysVocabulary.length} words to review today!</p>
 {#if todaysVocabulary.length !== 0}
-    <a href="/training/vocab">Review</a>
+    <a href="/training/srs">Review</a>
 {/if}
+<a href="/training/vocabulary">View my vocabulary</a>
 
 <h2>Exercise Training</h2>
 <p>Here you can review exercises of a certain type to refine your abilities.</p>

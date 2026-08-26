@@ -18,13 +18,16 @@ export const load: PageServerLoad = async ({ params, locals }) => {
             filter: `course = "${locals.user.course}"`
         });
 
-        const vocabulary = vocabData.map((vocab: any) => ({
+        const vocabMap = vocabData.map((vocab: any) => ({
             slug: vocab.slug,
             word: vocab.word,
             translation: vocab.translation,
             info: vocab.info,
             pos: vocab.part_of_speech
         }));
+
+        // Create dictionary from vocabulary map with slugs as keys
+        const vocabulary = Object.fromEntries(vocabMap.map(word => [word.slug, word]));
 
         // Extract and format the exercise records
         const rawExercises = lessonData.expand?.['exercises_via_lesson'] || [];

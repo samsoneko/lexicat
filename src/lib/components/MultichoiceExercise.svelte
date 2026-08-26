@@ -20,7 +20,7 @@
 
 </script>
 
-<h3>{content["prompt"]}</h3>
+<h3>{@html content["prompt"]}</h3>
 
 {#if !isCorrect}
     {#each content["options"] as option}
