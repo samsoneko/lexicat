@@ -1,6 +1,4 @@
 <script lang="ts">
-    import { readable } from 'svelte/store';
-    import { goto } from '$app/navigation';
     import InfoExercise from "$lib/components/InfoExercise.svelte";
     import VocabExercise from "$lib/components/VocabExercise.svelte";
     import MultichoiceExercise from "$lib/components/MultichoiceExercise.svelte";
@@ -8,6 +6,8 @@
     import WordBankExercise from "$lib/components/WordBankExercise.svelte";
     import TranslateExercise from '$lib/components/TranslateExercise.svelte';
     import PairsExercise from '$lib/components/PairsExercise.svelte';
+    
+    import LessonProgressBar from '$lib/components/LessonProgressBar.svelte';
 
 	let { data } = $props();
 
@@ -19,7 +19,6 @@
     let score = $state(0);
 
     let currentExercise = $derived(data.exercises[currentIndex]);
-    let progressPercentage = $derived((currentIndex / data.exercises.length) * 100);
     
     const scorableLessons = $derived(data.exercises.filter((exercise: { type: string }) => exercise.type !== 'info' && exercise.type !== 'vocab').length);
 
@@ -34,8 +33,7 @@
     }
 </script>
 
-
-<p>{progressPercentage}%</p>
+<LessonProgressBar totalAnswerCount={data.exercises.length} currentAnswerCount={currentIndex}/>
 
 {#if !lessonComplete}
     {#if data.exercises.length === 0}
@@ -44,8 +42,7 @@
         <!-- Debug for now -->
         <section>
             <div>
-                <h2>Exercise {currentIndex+1}</h2>
-                <h3>{currentExercise.type}</h3>
+                <h2>Exercise {currentExercise.index} - {String(currentExercise.type).charAt(0).toUpperCase() + String(currentExercise.type).slice(1).replaceAll('_', ' ')}</h2>
             </div>
 
             <div>
@@ -68,15 +65,17 @@
         </section>
 
         {#if isCorrect}
-            <button class="button-default" disabled={!isCorrect} onclick={nextQuestion} >
+        <div class="center-text">
+            <button class="continue-button" disabled={!isCorrect} onclick={nextQuestion} >
                 Continue
             </button>
+        </div>
         {/if}
     {/if}
 {:else}
     Training complete
     <p>Your Score is: {Math.round((score / scorableLessons) * 100)}%</p>
-    <button class="button-default" aria-label="End training">
+    <button class="continue-button" aria-label="End training">
         <a href="/training" aria-label="End training">End Training</a>
     </button>
 {/if}

@@ -1,7 +1,7 @@
 <script>
 	let {totalAnswerCount = 0, currentAnswerCount = 0} = $props();
     let progress = $derived(currentAnswerCount / totalAnswerCount);
-    let percentage = $derived(Math.round(progress*100));
+    let percentage = $derived(Math.round(progress*100).toFixed(2));
 </script>
 
 <div class="panel-default accuracy-panel">

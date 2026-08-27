@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { readable } from 'svelte/store';
     import { goto } from '$app/navigation';
     import InfoExercise from "$lib/components/InfoExercise.svelte";
     import VocabExercise from "$lib/components/VocabExercise.svelte";
@@ -34,7 +33,6 @@
             lessonComplete = true;
             currentIndex += 1;
         }
-        console.dir(scorableLessons);
     }
 
     // API result submission function
@@ -86,15 +84,17 @@
         </section>
 
         {#if isCorrect}
-            <button class="button-default" disabled={!isCorrect} onclick={nextQuestion} >
+        <div class="center-text">
+            <button class="continue-button" disabled={!isCorrect} onclick={nextQuestion} >
                 Continue
             </button>
+        </div>
         {/if}
     {/if}
 {:else}
     Lesson complete
     <p>Your Score is: {Math.round((score / scorableLessons) * 100)}%</p>
-    <button class="button-default" onclick={submitResults} >
+    <button class="continue-button" onclick={submitResults} >
         End Lesson
     </button>
 {/if}

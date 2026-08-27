@@ -17,19 +17,19 @@
     <!-- Theme Toggle Form Submit -->
     <form method="POST" action="/api/theme" style="display: inline">
         <input type="hidden" name="theme" value={data.theme} />
-        <button type="submit" class="button-default">
+        <button type="submit" class="default-button">
             {data.theme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode'}
         </button>
     </form>
     
     <!-- The Logout button form -->
     <form method="POST" action="/logout">
-        <button type="submit" class="button-default">Log Out</button>
+        <button type="submit" class="default-button">Log Out</button>
     </form>
 
     <a href="/course">Change Course</a>
 
     <form method="POST" action="?/deleteAccount">
-        <button type="submit" class="button-default" onclick={(event) => {if(!confirm('Do you really want to delete your account?')) {event.preventDefault();}}}>Delete my account</button>
+        <button type="submit" class="default-button" onclick={(event) => {if(!confirm('Do you really want to delete your account?')) {event.preventDefault();}}}>Delete my account</button>
     </form>
 {/if}

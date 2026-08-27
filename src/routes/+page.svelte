@@ -127,7 +127,7 @@
 
     .lesson-panel {
         background-color: var(--block-color);
-        padding: 12px;
+        padding: var(--padding-s);
         width: 360px;
         border-radius: var(--border-radius);
         margin: 0px 0px 16px var(--offset);
@@ -166,5 +166,10 @@
         padding: 10px;
         cursor: pointer;
         width: 50px;
+    }
+
+    .lesson-start-button:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+        transform: scale(1.1);
     }
 </style>

@@ -44,7 +44,7 @@
 {#if !isCorrect}
 	<div>
 		{#each selectedWords as word}
-			<button class="button-option" onclick={() => deselectWord(word)}>
+			<button class="option-button-active" onclick={() => deselectWord(word)}>
 				{word.text}
 			</button>
 		{/each}
@@ -52,17 +52,17 @@
 			<span>Tap the words to arrange them...</span>
 		{/if}
 	</div>
-
+	<hr>
 	<div>
 		{#each wordPool as word}
-			<button class="button-option" onclick={() => selectWord(word)}>
+			<button class="option-button" onclick={() => selectWord(word)}>
 				{word.text}
 			</button>
 		{/each}
 	</div>
 	
 	<div>
-		<button class="button-default" onclick={checkAnswer} disabled={selectedWords.length === 0}>
+		<button class="default-button" onclick={checkAnswer} disabled={selectedWords.length === 0}>
 			Check Answer
 		</button>
 	</div>

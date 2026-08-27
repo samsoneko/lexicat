@@ -8,7 +8,7 @@
 
 <div class="vocab-area">
     {#each data.vocabulary as word}
-        <WordTile word={word.word} translation={word.translation} pos={word.pos}/>
+        <WordTile word={word.word} translation={word.translation} info={word.info} pos={word.pos}/>
     {/each}
 </div>
 

@@ -26,7 +26,7 @@
 {#if !isCorrect}
     <form autocomplete="off" onsubmit={checkAnswer}>
         <input type="text" bind:value={currentAnswer} placeholder="Enter your answer"/>
-        <button class="button-default" type="submit">Check Answer</button>
+        <button class="default-button" type="submit">Check Answer</button>
     </form>
     {#if alreadyTried}
         <p>Wrong!</p>

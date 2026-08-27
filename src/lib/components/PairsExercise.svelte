@@ -2,13 +2,9 @@
 	let {isCorrect = $bindable(), vocab = $bindable(), content, score = $bindable()} = $props();
 
 	// Create two word pools for the pairs
-	const wordPool = content.answer
-		.map((pair, index) => ({ id: `f-${index}`, pairId: index, text: pair[0], type: 'foreign' }))
-		.sort(() => Math.random() - 0.5);
+	const wordPool = $derived(content.answer.map((pair, index) => ({ id: `f-${index}`, pairId: index, text: pair[0], type: 'foreign' })).sort(() => Math.random() - 0.5));
 
-	const translationPool = content.answer
-		.map((pair, index) => ({ id: `n-${index}`, pairId: index, text: pair[1], type: 'native' }))
-		.sort(() => Math.random() - 0.5);
+	const translationPool = $derived(content.answer.map((pair, index) => ({ id: `n-${index}`, pairId: index, text: pair[1], type: 'native' })).sort(() => Math.random() - 0.5));
 
 	// Variables for the currently selected word
 	let selectedId = $state(null);       
@@ -19,7 +15,10 @@
 	let alreadyTried = $state(false);
 
 	function handleCardClick(word) {
-		if (matchedPairIds.has(word.pairId) || selectedId === word.id) return; // Prevents clicking the same word counting as an error
+		if (matchedPairIds.has(word.pairId) || selectedId === word.id) { // Prevents counting clicking already matched pairs or same word as error
+			resetSelection();
+			return;
+		}
 
 		// First card selection
 		if (selectedId === null) {
@@ -34,6 +33,7 @@
 			matchedPairIds.add(word.pairId);
 			resetSelection();
 			if (matchedPairIds.size === content.answer.length) {
+				matchedPairIds = new Set();
 				if (!alreadyTried) {
 					isCorrect = true;
 					score += 1;
@@ -61,7 +61,7 @@
 	<div>
 		{#each wordPool as word (word.id)}
 			{#if !matchedPairIds.has(word.pairId)}
-				<button class="button-option" disabled={matchedPairIds.has(word.pairId)} onclick={() => handleCardClick(word)}>
+				<button class={selectedId === word.id || selectedPairId === word.id || matchedPairIds.has(word.pairId) ? "option-button-active" : "option-button"} disabled={matchedPairIds.has(word.pairId)} onclick={() => handleCardClick(word)}>
 					{word.text}
 				</button>
 			{/if}
@@ -71,7 +71,7 @@
 	<div>
 		{#each translationPool as word (word.id)}
 			{#if !matchedPairIds.has(word.pairId)}
-				<button class="button-option" disabled={matchedPairIds.has(word.pairId)} onclick={() => handleCardClick(word)}>
+				<button class={selectedId === word.id || selectedPairId === word.id || matchedPairIds.has(word.pairId) ? "option-button-active" : "option-button"} disabled={matchedPairIds.has(word.pairId)} onclick={() => handleCardClick(word)}>
 					{word.text}
 				</button>
 			{/if}

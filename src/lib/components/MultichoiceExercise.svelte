@@ -13,6 +13,7 @@
                 isCorrect = true;
             }
 			alreadyTried = false;
+            selectedAnswer = "";
         } else {
             alreadyTried = true;
         }
@@ -24,13 +25,13 @@
 
 {#if !isCorrect}
     {#each content["options"] as option}
-        <button class="button-option" onclick={() => selectedAnswer = option}>
+        <button class={selectedAnswer === option ? "option-button-active" : "option-button"} onclick={() => selectedAnswer = option}>
             {option}
         </button>
     {/each}
     
     <div>
-        <button class="button-default" onclick={checkAnswer} disabled={selectedAnswer === ""}>
+        <button class="default-button" onclick={checkAnswer} disabled={selectedAnswer === ""}>
             Check Answer
         </button>
     </div>

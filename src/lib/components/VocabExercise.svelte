@@ -13,7 +13,7 @@
 
 <div class="vocab-area">
     {#each content["options"] as slug}
-        <WordTile word={vocab[slug].word} translation={vocab[slug].translation} pos={vocab[slug].pos}/>
+        <WordTile word={vocab[slug].word} translation={vocab[slug].translation} info={vocab[slug].info} pos={vocab[slug].pos}/>
     {/each}
 </div>
 

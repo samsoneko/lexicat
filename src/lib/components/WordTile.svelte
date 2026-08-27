@@ -1,5 +1,5 @@
 <script>
-	let {word, translation, pos} = $props();
+	let {word, translation, info, pos} = $props();
 
     function getPOSColor(pos = "noun") {
         if (pos === "noun") {
@@ -22,21 +22,35 @@
 </script>
 
 <div class="word-tile">
-    <div>
-        <p class="word">{word}</p>
-        <p class="translation">{translation}</p>
+    <div class="upper-tile-part">
+        <div>
+            <p class="word">{word}</p>
+            <p class="translation">{translation}</p>
+        </div>
+        <p class="pos" style='--pos-color:{getPOSColor(pos)}'>{pos}</p>
     </div>
-    <p class="pos" style='--pos-color:{getPOSColor(pos)}'>{pos}</p>
+    {#if info !== ''}
+    <hr>
+    <p class="info">{info}</p>
+    {/if}
 </div>
 
 <style>
     .word-tile {
         width: 300px;
         background-color: var(--layer-1);
-        padding: 12px;
+        padding: var(--padding-s);
         border: var(--border);
         box-shadow: var(--box-shadow);
-        border-radius: 1rem;
+        border-radius: var(--border-radius-s);
+    }
+
+    .word-tile:hover {
+        background-color: var(--hover-color);
+        transform: scale(1.02);
+    }
+
+    .upper-tile-part {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -51,6 +65,12 @@
     .word {
         font-size: 1.2rem;
         color: var(--text-color);
+        margin: 0px;
+    }
+
+    .info {
+        color: var(--subtext-color);
+        font-size: 0.8rem;
         margin: 0px;
     }
 

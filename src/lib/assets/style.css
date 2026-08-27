@@ -8,8 +8,11 @@
     --active-color: #1f3a8b;
 
     --border-radius: 2rem;
+    --border-radius-s: 1rem;
     --padding: 16px;
+    --padding-s :12px;
     --border: 1px solid #222222;
+    --border-active: 3px solid var(--teal-700);
     --primary-border: none;
     --box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 
@@ -71,8 +74,8 @@ a {
     height: 100%;
 }
 
-.button-default {
-    padding: 12px;
+.default-button {
+    padding: var(--padding-s);
     border: var(--border);
     background-color: var(--layer-1);
     color: var(--text-color);
@@ -81,15 +84,38 @@ a {
     cursor: pointer;
 }
 
-.button-option {
-    padding: 12px;
+.option-button {
+    padding: var(--padding-s);
     margin: 4px;
     border: var(--border);
     background-color: var(--layer-1);
     color: var(--text-color);
     box-shadow: var(--box-shadow);
-    border-radius: 1rem;
+    border-radius: var(--border-radius-s);
     cursor: pointer;
+}
+
+.option-button-active {
+    padding: calc(var(--padding-s) - 2px);
+    margin: 4px;
+    border: var(--border-active);
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-s);
+    cursor: pointer;
+}
+
+.continue-button {
+    padding: var(--padding-s);
+    border: var(--border);
+    background-color: var(--layer-1);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 16px;
 }
 
 .center-text {
@@ -103,7 +129,7 @@ hr {
 input {
     border: var(--border);
     background-color: var(--layer-1);
-    padding: 12px;
+    padding: var(--padding-s);
     border-radius: var(--border-radius);
     color: var(--text-color);
     box-shadow: var(--box-shadow);
@@ -123,6 +149,16 @@ input {
 
     .navbar-button:hover {
         background-color: var(--hover-color);
+    }
+
+    .default-button:hover {
+        background-color: var(--hover-color);
+        transform: scale(1.1);
+    }
+
+    .option-button:hover {
+        background-color: var(--hover-color);
+        transform: scale(1.1);
     }
 
     .active {

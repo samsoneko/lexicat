@@ -59,28 +59,28 @@
             {currentVocab.word}
 
             {#if isHidden}
-                <button class="button-default" onclick={() => (isHidden = false)} >
+                <button class="default-button" onclick={() => (isHidden = false)} >
                     Show translation
                 </button>
             {:else}
                 {currentVocab.translation}
                 How well do you remember this word
-                <button class="button-default" onclick={() => (rateVocab(0))} >
+                <button class="default-button" onclick={() => (rateVocab(0))} >
                     Not at all
                 </button>
-                <button class="button-default" onclick={() => (rateVocab(1))} >
+                <button class="default-button" onclick={() => (rateVocab(1))} >
                     Felt familiar
                 </button>
-                <button class="button-default" onclick={() => (rateVocab(2))} >
+                <button class="default-button" onclick={() => (rateVocab(2))} >
                     Seemed easy to remember
                 </button>
-                <button class="button-default" onclick={() => (rateVocab(3))} >
+                <button class="default-button" onclick={() => (rateVocab(3))} >
                     Only hardly
                 </button>
-                <button class="button-default" onclick={() => (rateVocab(4))} >
+                <button class="default-button" onclick={() => (rateVocab(4))} >
                     Well
                 </button>
-                <button class="button-default" onclick={() => (rateVocab(5))} >
+                <button class="default-button" onclick={() => (rateVocab(5))} >
                     Very well
                 </button>
             {/if}
@@ -88,7 +88,7 @@
     {/if}
 {:else}
     You have reviewed all words
-    <button class="button-default" aria-label="End reviews">
+    <button class="default-button" aria-label="End reviews">
         <a href="/training" aria-label="End reviews">End reviews</a>
     </button>
 {/if}
