@@ -24,13 +24,15 @@
 <h3>{@html content["prompt"]}</h3>
 
 {#if !isCorrect}
+    {#if alreadyTried}
+        <h2 class="wrong-label">Wrong!</h2>
+    {/if}
+
     <form autocomplete="off" onsubmit={checkAnswer}>
         <input type="text" bind:value={currentAnswer} placeholder="Enter your answer"/>
-        <button class="default-button" type="submit">Check Answer</button>
+        <br>
+        <button class="check-button" type="submit">Check Answer</button>
     </form>
-    {#if alreadyTried}
-        <p>Wrong!</p>
-    {/if}
 {:else}
-    <p>Correct!</p>
+    <h2 class="correct-label">Correct!</h2>
 {/if}

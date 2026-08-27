@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { readable } from 'svelte/store';
+    import { goto } from '$app/navigation';
 
 	let { data } = $props();
 
@@ -24,11 +24,12 @@
 
 <h2>Vocabulary Reviews</h2>
 <p>Your vocabulary is already {data.wordMap.length} words large!</p>
+<button class="default-button" onclick={() => goto("/training/vocabulary")}>View my vocabulary <i class="fas fa-book"></i></button>
+
 <p>You have {todaysVocabulary.length} words to review today!</p>
 {#if todaysVocabulary.length !== 0}
-    <a href="/training/srs">Review</a>
+    <button class="default-button" onclick={() => goto("/training/srs")}>Review todays words <i class="fas fa-repeat"></i></button>
 {/if}
-<a href="/training/vocabulary">View my vocabulary</a>
 
 <h2>Exercise Training</h2>
 <p>Here you can review exercises of a certain type to refine your abilities.</p>
@@ -43,5 +44,5 @@
         <option value="pairs">Pairs</option>
     </select>
     <input type="number" min="1" max="10" bind:value={selectedNumber}/>
-    <a href="/training/exercise/{selectedExercise}/{selectedNumber}">Start exercises</a>
+    <button class="default-button" onclick={() => goto("/training/exercise/" + selectedExercise + "/" + selectedNumber)}>Start exercises <i class="fas fa-dumbbell"></i></button>
 </div>

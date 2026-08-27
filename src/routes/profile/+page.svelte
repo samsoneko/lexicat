@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { goto } from '$app/navigation';
 	let { data } = $props();
 </script>
 
@@ -27,7 +28,7 @@
         <button type="submit" class="default-button">Log Out</button>
     </form>
 
-    <a href="/course">Change Course</a>
+    <button class="default-button" onclick={() => goto("/course")}>Change my course</button>
 
     <form method="POST" action="?/deleteAccount">
         <button type="submit" class="default-button" onclick={(event) => {if(!confirm('Do you really want to delete your account?')) {event.preventDefault();}}}>Delete my account</button>

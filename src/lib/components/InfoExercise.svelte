@@ -9,4 +9,7 @@
 </script>
 
 <h3>{@html content["title"]}</h3>
-<p>{@html content["text"]}</p>
+
+<div class="info-panel">
+    {@html content["text"]}
+</div>

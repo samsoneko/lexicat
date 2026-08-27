@@ -78,5 +78,5 @@
 		{/each}
 	</div>
 {:else}
-    <p>Correct!</p>
+    <h2 class="correct-label">Correct!</h2>
 {/if}

@@ -59,16 +59,16 @@
 			</button>
 		{/each}
 	</div>
+
+	{#if alreadyTried}
+        <h2 class="wrong-label">Wrong!</h2>
+    {/if}
 	
 	<div>
-		<button class="default-button" onclick={checkAnswer} disabled={wordPool.length !== 0}>
+		<button class="check-button" onclick={checkAnswer} disabled={wordPool.length !== 0}>
 			Check Answer
 		</button>
 	</div>
-
-    {#if alreadyTried}
-        <p>Wrong!</p>
-    {/if}
 {:else}
-    <p>Correct!</p>
+    <h2 class="correct-label">Correct!</h2>
 {/if}

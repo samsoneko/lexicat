@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { goto } from '$app/navigation';
     import InfoExercise from "$lib/components/InfoExercise.svelte";
     import VocabExercise from "$lib/components/VocabExercise.svelte";
     import MultichoiceExercise from "$lib/components/MultichoiceExercise.svelte";
@@ -39,10 +40,9 @@
     {#if data.exercises.length === 0}
         <p>No content available yet.</p>
     {:else}
-        <!-- Debug for now -->
-        <section>
+        <section class="centered-section center-text">
             <div>
-                <h2>Exercise {currentExercise.index} - {String(currentExercise.type).charAt(0).toUpperCase() + String(currentExercise.type).slice(1).replaceAll('_', ' ')}</h2>
+                <h2 class="exercise-title">{String(currentExercise.type).charAt(0).toUpperCase() + String(currentExercise.type).slice(1).replaceAll('_', ' ')}</h2>
             </div>
 
             <div>
@@ -66,16 +66,20 @@
 
         {#if isCorrect}
         <div class="center-text">
-            <button class="continue-button" disabled={!isCorrect} onclick={nextQuestion} >
-                Continue
-            </button>
+            <button class="continue-button" disabled={!isCorrect} onclick={nextQuestion}>Continue <i class="fas fa-arrow-right"></i></button>
         </div>
         {/if}
     {/if}
 {:else}
-    Training complete
-    <p>Your Score is: {Math.round((score / scorableLessons) * 100)}%</p>
-    <button class="continue-button" aria-label="End training">
-        <a href="/training" aria-label="End training">End Training</a>
-    </button>
+    <div class="centered-section">
+        <h2>Training complete</h2>
+        <p>Your Score is: {Math.round((score / scorableLessons) * 100)}%</p>
+        <button class="continue-button" onclick={() => goto("/training")}>End Lesson</button>
+    </div>
 {/if}
+
+<style>
+    .exercise-title {
+        margin: 0px;
+    }
+</style>

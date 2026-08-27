@@ -5,7 +5,7 @@
 </script>
 
 <div class="panel-default accuracy-panel">
-    <h4 class="accuracy-title center-text">Lesson Progress</h4>
+    <p class="accuracy-title center-text">Lesson Progress</p>
     <div class="accuracy-bar-frame">
         <div class="accuracy-bar-background">
             <div class="accuracy-bar-content" style="--progress:{progress}"></div>
@@ -16,23 +16,28 @@
 
 <style>
     .accuracy-panel {
-      margin-bottom: 16px;
+        margin-bottom: 16px;
     }
 
     .accuracy-title {
         margin-top: 0px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
+        font-size: 0.9rem;
     }
 
     .accuracy-percentage {
         margin: 8px 0px 0px 0px;
+        font-size: 0.9rem;
     }
 
     .accuracy-bar-frame {
         background-color: var(--layer-2);
+        width: 70%;
         border-radius: 16px;
         padding: 1px;
         box-shadow: var(--box-shadow);
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .accuracy-bar-background {
@@ -46,6 +51,6 @@
         width: calc(var(--progress) * 100%);
         height: 20px;
         border-radius: 8px;
-        background-color: var(--teal-900);
+        background-color: var(--teal-dark);
     }
 </style>
