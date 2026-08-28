@@ -7,7 +7,6 @@ export const POST: RequestHandler = async ({ request, locals }) => {
         throw error(401, 'Unauthorized request.');
     }
 
-    const COURSE_ID = locals.pb.authStore.record.course; // Not even necessary because all words over all courses are unique
     const userId = locals.pb.authStore.record.id;
     const { lessonId, score } = await request.json();
 
@@ -49,13 +48,29 @@ export const POST: RequestHandler = async ({ request, locals }) => {
             }
         }
 
+        const userHistory = await locals.pb.collection('completed_lessons').getFullList({
+            filter: `user = "${userId}"`,
+            fields: 'lesson'
+        });
+
         // Create record in completed_lessons collection
         // Timestamp of creation automatically serves as timestamp of lesson completion
-        await locals.pb.collection('completed_lessons').create({
-            user: userId,
-            lesson: lessonId,
-            score: score
-        });
+        if(userHistory.some(e => e.lesson === `${lessonId}`)) {
+            await locals.pb.collection('completed_lessons').create({
+                user: userId,
+                lesson: lessonId,
+                score: score,
+                type: "review"
+            });
+        }
+        else {
+            await locals.pb.collection('completed_lessons').create({
+                user: userId,
+                lesson: lessonId,
+                score: score,
+                type: "initial"
+            });
+        }
 
         return json({ success: true, message: 'Progress saved successfully.' });
 

@@ -43,7 +43,7 @@
 {#if !isCorrect}
 	<div>
 		{#each selectedWords as word}
-			<button class="option-button-active" onclick={() => deselectWord(word)}>
+			<button class="word-button-active" onclick={() => deselectWord(word)}>
 				{word.text}
 			</button>
 		{/each}
@@ -54,7 +54,7 @@
 	<hr>
 	<div>
 		{#each wordPool as word}
-			<button class="option-button" onclick={() => selectWord(word)}>
+			<button class="word-button" onclick={() => selectWord(word)}>
 				{word.text}
 			</button>
 		{/each}

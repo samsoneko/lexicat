@@ -2,30 +2,38 @@
     let { form } = $props(); 
 </script>
 
-<h1>Create an Account</h1>
+<section class="centered-section center-text">
+    <h1>Create an Account</h1>
 
-{#if form?.error}
-    <p style="color: red;">{form.error}</p>
-{/if}
+    {#if form?.error}
+        <p style="color: red;">{form.error}</p>
+    {/if}
 
-<!-- Form for registering -->
-<form method="POST">
-    <label>
-        Username:
-        <input type="text" name="username" value={form?.username ?? ''} placeholder="e.g. polyglot123" required />
-    </label>
+    <!-- Form for registering -->
+    <form class="register-form" method="POST">
+        <label>
+            <input type="text" name="username" placeholder="Username" value={form?.username ?? ''} required />
+        </label>
 
-    <label>
-        Email:
-        <input type="email" name="email" value={form?.email ?? ''} required />
-    </label>
-    
-    <label>
-        Password:
-        <input type="password" name="password" required />
-    </label>
+        <label>
+            <input type="email" name="email" placeholder="Email" value={form?.email ?? ''} required />
+        </label>
+        
+        <label>
+            <input type="password" name="password" placeholder="Password" required />
+        </label>
 
-    <button type="submit">Register</button>
-</form>
+        <button class="default-button" type="submit">Register</button>
+    </form>
 
-<p>Already have an account? <a href="/login">Log in here</a></p>
+    <p>Already have an account? <a href="/login">Log in here</a></p>
+</section>
+
+<style>
+    .register-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+</style>

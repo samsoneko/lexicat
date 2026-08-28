@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { readable } from 'svelte/store';
+    import { goto } from '$app/navigation';
 
 	let { data } = $props();
 
@@ -47,48 +47,95 @@
     }
 </script>
 
-{#if !allVocabDone}
-    {#if todaysVocabulary.length === 0}
-        <p>No content available yet.</p>
+<section class="centered-section">
+    {#if !allVocabDone}
+        {#if todaysVocabulary.length === 0}
+            <p>No content available yet.</p>
+        {:else}
+                <h2>Vocabulary review</h2>
+                <h3>Recall the meaning of the following word:</h3>
+
+                <div class="srs-tile">
+                    <h3 class="srs-text">{currentVocab.word}</h3>
+                    {#if !isHidden}
+                        <hr>
+                        <p class="srs-text">{currentVocab.translation}</p>
+                    {/if}
+                </div>
+
+                {#if isHidden}
+                    <button class="default-button" onclick={() => (isHidden = false)} >
+                        Show translation
+                    </button>
+                {:else}
+                    <h3>How well did you remember this word?</h3>
+                    <button class="default-button srs-button srs-5-color" onclick={() => (rateVocab(5))} >
+                        Very well
+                    </button>
+                    <button class="default-button srs-button srs-4-color" onclick={() => (rateVocab(4))} >
+                        Well
+                    </button>
+                    <button class="default-button srs-button srs-3-color" onclick={() => (rateVocab(3))} >
+                        Only hardly
+                    </button>
+                    <button class="default-button srs-button srs-2-color" onclick={() => (rateVocab(2))} >
+                        Seemed easy
+                    </button>
+                    <button class="default-button srs-button srs-1-color" onclick={() => (rateVocab(1))} >
+                        Felt familiar
+                    </button>
+                    <button class="default-button srs-button srs-0-color" onclick={() => (rateVocab(0))} >
+                        Not at all
+                    </button>
+                {/if}
+        {/if}
     {:else}
-        <section>
-            <div>
-                <h2>Recall the translation of the following word</h2>
-            </div>
-
-            {currentVocab.word}
-
-            {#if isHidden}
-                <button class="default-button" onclick={() => (isHidden = false)} >
-                    Show translation
-                </button>
-            {:else}
-                {currentVocab.translation}
-                How well do you remember this word
-                <button class="default-button" onclick={() => (rateVocab(0))} >
-                    Not at all
-                </button>
-                <button class="default-button" onclick={() => (rateVocab(1))} >
-                    Felt familiar
-                </button>
-                <button class="default-button" onclick={() => (rateVocab(2))} >
-                    Seemed easy to remember
-                </button>
-                <button class="default-button" onclick={() => (rateVocab(3))} >
-                    Only hardly
-                </button>
-                <button class="default-button" onclick={() => (rateVocab(4))} >
-                    Well
-                </button>
-                <button class="default-button" onclick={() => (rateVocab(5))} >
-                    Very well
-                </button>
-            {/if}
-        </section>
+        <h2>You have reviewed all words</h2>
+        <button class="default-button" onclick={() => goto("/training")}>End reviews</button>
     {/if}
-{:else}
-    You have reviewed all words
-    <button class="default-button" aria-label="End reviews">
-        <a href="/training" aria-label="End reviews">End reviews</a>
-    </button>
-{/if}
+</section>
+
+<style>
+    .srs-tile {
+        width: 200px;
+        background-color: var(--layer-1);
+        padding: var(--padding-s);
+        border: var(--border);
+        box-shadow: var(--box-shadow);
+        border-radius: var(--border-radius-s);
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .srs-text {
+        margin: 0px;
+    }
+
+    .srs-button {
+        width: 160px;
+    }
+
+    .srs-5-color {
+        border: 3px solid var(--violet-light);
+    }
+
+    .srs-4-color {
+        border: 3px solid var(--sky-light);
+    }
+
+    .srs-3-color {
+        border: 3px solid var(--emerald-light);
+    }
+
+    .srs-2-color {
+        border: 3px solid var(--yellow-light);
+    }
+
+    .srs-1-color {
+        border: 3px solid var(--orange-light);
+    }
+
+    .srs-0-color {
+        border: 3px solid var(--red-light);
+    }
+</style>

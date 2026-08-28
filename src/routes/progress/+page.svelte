@@ -8,6 +8,7 @@
 </script>
 
 <h1>Your Progress</h1>
+<hr class="page-spacer">
 {#if data.progress}
     {#each data.progress as entry}
     <div>

@@ -61,7 +61,7 @@
 	<div>
 		{#each wordPool as word (word.id)}
 			{#if !matchedPairIds.has(word.pairId)}
-				<button class={selectedId === word.id || selectedPairId === word.id || matchedPairIds.has(word.pairId) ? "option-button-active" : "option-button"} disabled={matchedPairIds.has(word.pairId)} onclick={() => handleCardClick(word)}>
+				<button class={selectedId === word.id || selectedPairId === word.id || matchedPairIds.has(word.pairId) ? "word-button-active" : "word-button"} disabled={matchedPairIds.has(word.pairId)} onclick={() => handleCardClick(word)}>
 					{word.text}
 				</button>
 			{/if}
@@ -71,7 +71,7 @@
 	<div>
 		{#each translationPool as word (word.id)}
 			{#if !matchedPairIds.has(word.pairId)}
-				<button class={selectedId === word.id || selectedPairId === word.id || matchedPairIds.has(word.pairId) ? "option-button-active" : "option-button"} disabled={matchedPairIds.has(word.pairId)} onclick={() => handleCardClick(word)}>
+				<button class={selectedId === word.id || selectedPairId === word.id || matchedPairIds.has(word.pairId) ? "word-button-active" : "word-button"} disabled={matchedPairIds.has(word.pairId)} onclick={() => handleCardClick(word)}>
 					{word.text}
 				</button>
 			{/if}

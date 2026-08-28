@@ -21,8 +21,8 @@
 </script>
 
 <h1>Training</h1>
-
-<h2>Vocabulary Reviews</h2>
+<hr class="page-spacer">
+<h2>Vocabulary</h2>
 <p>Your vocabulary is already {data.wordMap.length} words large!</p>
 <button class="default-button" onclick={() => goto("/training/vocabulary")}>View my vocabulary <i class="fas fa-book"></i></button>
 
@@ -31,7 +31,7 @@
     <button class="default-button" onclick={() => goto("/training/srs")}>Review todays words <i class="fas fa-repeat"></i></button>
 {/if}
 
-<h2>Exercise Training</h2>
+<h2>Exercises</h2>
 <p>Here you can review exercises of a certain type to refine your abilities.</p>
 <p>Depending on the amount of available exercises, there may be less exercises than your desired number.</p>
 <div>

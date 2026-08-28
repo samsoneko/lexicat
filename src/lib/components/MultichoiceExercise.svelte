@@ -25,7 +25,7 @@
 
 {#if !isCorrect}
     {#each content["options"] as option}
-        <button class={selectedAnswer === option ? "option-button-active" : "option-button"} onclick={() => selectedAnswer = option}>
+        <button class={selectedAnswer === option ? "word-button-active" : "word-button"} onclick={() => selectedAnswer = option}>
             {option}
         </button>
     {/each}

@@ -2,25 +2,34 @@
     let { form } = $props();
 </script>
 
-<h1>Login</h1>
+<section class="centered-section center-text">
+    <h1>Login</h1>
 
-{#if form?.error}
-    <p style="color: red;">{form.error}</p>
-{/if}
+    {#if form?.error}
+        <p style="color: red;">{form.error}</p>
+    {/if}
 
-<!-- Form for registering -->
-<form method="POST">
-    <label>
-        Username or Email:
-        <input type="identity" name="identity" value={form?.identity ?? ''} required />
-    </label>
-    
-    <label>
-        Password:
-        <input type="password" name="password" required />
-    </label>
+    <!-- Form for registering -->
+    <form class="login-form" method="POST">
+        <label>
+            <input type="identity" name="identity" placeholder="Username or Email" value={form?.identity ?? ''} required />
+        </label>
+        
+        <label>
+            <input type="password" name="password" placeholder="Password" required />
+        </label>
 
-    <button type="submit">Log In</button>
-</form>
+        <button class="default-button" type="submit">Log In</button>
+    </form>
 
-<p>New user? <a href="/register">Register here</a></p>
+    <p>New user? <a href="/register">Register here</a></p>
+</section>
+
+<style>
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+</style>

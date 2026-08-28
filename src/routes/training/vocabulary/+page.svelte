@@ -4,9 +4,9 @@
 
 </script>
 
-<h2>Words you've already unlocked:</h2>
-
 <div class="vocab-area">
+    <h2>Words you've already unlocked:</h2>
+    
     {#each data.vocabulary as word}
         <WordTile word={word.word} translation={word.translation} info={word.info} pos={word.pos}/>
     {/each}

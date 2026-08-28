@@ -51,6 +51,7 @@
 <div class="chapter-section">
     {#if data.user}
         <h1>Hi, {data.user.username}!</h1>
+        <hr class="page-spacer">
         <p>Ready to improve your language capabilities?</p>
     {/if}
 </div>

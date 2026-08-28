@@ -51,6 +51,6 @@
         width: calc(var(--progress) * 100%);
         height: 20px;
         border-radius: 8px;
-        background-color: var(--teal-dark);
+        background-color: var(--emerald-dark);
     }
 </style>
