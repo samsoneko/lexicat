@@ -172,6 +172,10 @@ h1, h2, h3 {
     text-align: center;
 }
 
+.exercise-prompt {
+    font-size: 1.5rem;
+}
+
 hr {
     border: var(--border);
 }

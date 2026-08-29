@@ -55,7 +55,7 @@
 	}
 </script>
 
-<h2>Select the matching pairs</h2>
+<p class="exercise-prompt">Select the matching pairs</p>
 
 {#if !isCorrect}
 	<div>

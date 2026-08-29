@@ -15,7 +15,7 @@
                         "index": 1,
                         "content": {
                             "title": "To be or not to be",
-                            "text": "When talking about existences and attributes, Lexin uses the verb 'de' (to be). The verb is conjugated irregularly based on the person or object in question. A few of its forms are introduced in this lesson."
+                            "text": "When talking about existences and attributes, Lexin uses the verb <b><i>de</i></b> (<i>To be</i>).<hr/>The verb is conjugated irregularly based on the person or object in question. A few of its forms are introduced in this lesson."
                         }
                     },
                     {
@@ -23,7 +23,7 @@
                         "index": 2,
                         "content": {
                             "title": "Personal pronouns",
-                            "text": "Although Lexin has pronouns like 'vi' (I) or 'ca' (You), they are barely used in everyday speech. As a conjugated verb already contains all information needed to distinguish between persons, it is sufficient to say something like 'dea' (I am) instead of 'vi dea' (I am)."
+                            "text": "Although Lexin has pronouns like <b><i>vi</i></b> (<i>I</i>) or <b><i>ca</i></b> (<i>You</i>), they are barely used in everyday speech.<hr/>As a conjugated verb already contains all information needed to distinguish between persons, it is sufficient to say something like <b><i>dea</i></b> (<i>I am</i>) instead of <b><i>vi dea</i></b> (<i>I am</i>)."
                         }
                     },
                     {
@@ -37,7 +37,7 @@
                         "type": "multiple_choice",
                         "index": 4,
                         "content": {
-                            "prompt": "How do you say 'I am'?",
+                            "prompt": "I am",
                             "options": ["dea", "jan", "va", "deana"],
                             "answer": "dea"
                         }
@@ -46,7 +46,7 @@
                         "type": "multiple_choice",
                         "index": 5,
                         "content": {
-                            "prompt": "How do you say 'We are'?",
+                            "prompt": "We are",
                             "options": ["dea", "jan", "va", "deana"],
                             "answer": "deana"
                         }
@@ -55,7 +55,7 @@
                         "type": "multiple_choice",
                         "index": 6,
                         "content": {
-                            "prompt": "How do you say 'He / she is'?",
+                            "prompt": "He / she is",
                             "options": ["dea", "jan", "va", "deana"],
                             "answer": "va"
                         }
@@ -64,7 +64,7 @@
                         "type": "multiple_choice",
                         "index": 7,
                         "content": {
-                            "prompt": "How do you say 'You are'?",
+                            "prompt": "You are",
                             "options": ["dea", "jan", "va", "deana"],
                             "answer": "jan"
                         }
@@ -81,7 +81,7 @@
                         "type": "translate",
                         "index": 9,
                         "content": {
-                            "prompt": "How do you say 'I am'?",
+                            "prompt": "I am",
                             "answer": "dea"
                         }
                     },
@@ -89,7 +89,7 @@
                         "type": "translate",
                         "index": 10,
                         "content": {
-                            "prompt": "How do you say 'You are'?",
+                            "prompt": "You are",
                             "answer": "jan"
                         }
                     },
@@ -97,7 +97,7 @@
                         "type": "translate",
                         "index": 11,
                         "content": {
-                            "prompt": "How do you say 'He / she is'?",
+                            "prompt": "He / she is",
                             "answer": "va"
                         }
                     },
@@ -105,7 +105,7 @@
                         "type": "translate",
                         "index": 12,
                         "content": {
-                            "prompt": "How do you say 'We are'?",
+                            "prompt": "We are",
                             "answer": "deana"
                         }
                     }
@@ -122,7 +122,7 @@
                         "index": 1,
                         "content": {
                             "title": "To be, but what to be?",
-                            "text": "Now that we know how to express existence itself, the next step is to express what something is. For this, we simply state the desired noun after the conjugated verb, like in 'dea curán' (I am a man)."
+                            "text": "Now that we know how to express existence itself, the next step is to express what something is. For this, we simply state the desired noun after the conjugated verb, like in <b><i>dea curán</i></b> (<i>I am a man</i>)."
                         }
                     },
                     {
@@ -130,7 +130,7 @@
                         "index": 2,
                         "content": {
                             "title": "Articles",
-                            "text": "It is important to notice that there are no articles like 'the' or 'a' in Lexin. The word 'curán' can mean both 'a man' and 'the man', as well as just 'man'."
+                            "text": "It is important to notice that there are no articles like <i>the</i> or <i>a</i> in Lexin. The word <b><i>curán</i></b> can mean both <i>a man</i> and <i>the man</i>, as well as just <i>man</i>."
                         }
                     },
                     {
@@ -144,7 +144,7 @@
                         "type": "multiple_choice",
                         "index": 4,
                         "content": {
-                            "prompt": "How do you say 'Human'?",
+                            "prompt": "Human",
                             "options": ["lecu", "selén", "curán"],
                             "answer": "lecu"
                         }
@@ -153,7 +153,7 @@
                         "type": "multiple_choice",
                         "index": 5,
                         "content": {
-                            "prompt": "How do you say 'Man'?",
+                            "prompt": "Man",
                             "options": ["lecu", "selén", "curán"],
                             "answer": "curán"
                         }
@@ -162,7 +162,7 @@
                         "type": "multiple_choice",
                         "index": 6,
                         "content": {
-                            "prompt": "How do you say 'Woman'?",
+                            "prompt": "Woman",
                             "options": ["lecu", "selén", "curán"],
                             "answer": "selén"
                         }
@@ -180,7 +180,7 @@
                         "index": 8,
                         "content": {
                             "title": "Referencing real entities",
-                            "text": "The final step for expressing existence is referencing real things and objects in the world around you. For this, you can use a pronoun like 'ara' (this) like you would in English: 'Ara va lecu' (This is a human)."
+                            "text": "The final step for expressing existence is referencing real things and objects in the world around you.<hr/>For this, you can use a pronoun like <b><i>ara</i></b> (<i>This / That</i>) like you would in English: <b><i>Ara va lecu</i></b> (<i>This is a human</i>)."
                         }
                     },
                     {
@@ -194,7 +194,7 @@
                         "type": "arrange",
                         "index": 10,
                         "content": {
-                            "prompt": "How do you say 'This is a woman'?",
+                            "prompt": "This is a woman",
                             "options": ["selén", "ara", "va"],
                             "answer": "ara va selén"
                         }
@@ -203,7 +203,7 @@
                         "type": "arrange",
                         "index": 11,
                         "content": {
-                            "prompt": "How do you say 'You are a human'?",
+                            "prompt": "You are a human",
                             "options": ["jan", "lecu"],
                             "answer": "jan lecu"
                         }
@@ -212,7 +212,7 @@
                         "type": "arrange",
                         "index": 12,
                         "content": {
-                            "prompt": "How do you say 'This is an object'?",
+                            "prompt": "This is an object",
                             "options": ["cen", "ara", "va"],
                             "answer": "ara va cen"
                         }
@@ -221,7 +221,7 @@
                         "type": "translate",
                         "index": 13,
                         "content": {
-                            "prompt": "How do you say 'I am a man'?",
+                            "prompt": "I am a man",
                             "answer": "dea curán"
                         }
                     },
@@ -229,7 +229,7 @@
                         "type": "arrange",
                         "index": 14,
                         "content": {
-                            "prompt": "How do you say 'The woman is a human'?",
+                            "prompt": "The woman is a human",
                             "options": ["selén", "va", "lecu"],
                             "answer": "selén va lecu"
                         }
@@ -238,7 +238,7 @@
                         "type": "word_bank",
                         "index": 15,
                         "content": {
-                            "prompt": "How do you say 'It is an object'?",
+                            "prompt": "It is an object",
                             "options": ["ara", "va", "cen", "lecu"],
                             "answer": "va cen"
                         }
@@ -247,7 +247,7 @@
                         "type": "arrange",
                         "index": 16,
                         "content": {
-                            "prompt": "How do you say 'This woman'?",
+                            "prompt": "This woman",
                             "options": ["selén", "ara"],
                             "answer": "ara selén"
                         }
@@ -265,7 +265,7 @@
                         "index": 1,
                         "content": {
                             "title": "Confirming and denying",
-                            "text": "While appropriately agreeing and disagreeing can get quite complicated in Lexin, there are two basic words necessary for any such statement: 'sayá' (yes) and 'jiné' (no)."
+                            "text": "While appropriately agreeing and disagreeing can get quite complicated in Lexin, there are two basic words necessary for any such statement: <b><i>sayá</i></b> (<i>Yes</i>) and <b><i>jiné</i></b> (<i>No</i>)."
                         }
                     },
                     {
@@ -279,7 +279,7 @@
                         "type": "multiple_choice",
                         "index": 3,
                         "content": {
-                            "prompt": "How do you say 'Yes'?",
+                            "prompt": "Yes",
                             "options": ["sayá", "jiné"],
                             "answer": "sayá"
                         }
@@ -288,7 +288,7 @@
                         "type": "multiple_choice",
                         "index": 4,
                         "content": {
-                            "prompt": "How do you say 'No'?",
+                            "prompt": "No",
                             "options": ["sayá", "jiné"],
                             "answer": "jiné"
                         }
@@ -297,7 +297,7 @@
                         "type": "arrange",
                         "index": 5,
                         "content": {
-                            "prompt": "How do you say 'Yes, I am a human'?",
+                            "prompt": "Yes, I am a human",
                             "options": ["sayá", "dea", "lecu"],
                             "answer": "sayá dea lecu"
                         }
@@ -307,7 +307,7 @@
                         "index": 6,
                         "content": {
                             "title": "Greetings and more",
-                            "text": "Next to yes and no, the most important words in a social context are probably the polite phrases we use daily. For now, for of these should be sufficient to survive any basic conversation."
+                            "text": "Next to <i>yes<i/> and <i>no<i/>, the most important words in a social context are probably the polite phrases we use daily. For now, for of these should be sufficient to survive any basic conversation."
                         }
                     },
                     {
@@ -321,7 +321,7 @@
                         "type": "multiple_choice",
                         "index": 8,
                         "content": {
-                            "prompt": "How do you say 'Thank you'?",
+                            "prompt": "Thank you",
                             "options": ["valén", "janta", "seyén", "moyán"],
                             "answer": "seyén"
                         }
@@ -330,7 +330,7 @@
                         "type": "multiple_choice",
                         "index": 9,
                         "content": {
-                            "prompt": "How do you say 'Bye'?",
+                            "prompt": "Bye",
                             "options": ["valén", "janta", "seyén", "moyán"],
                             "answer": "janta"
                         }
@@ -339,7 +339,7 @@
                         "type": "multiple_choice",
                         "index": 10,
                         "content": {
-                            "prompt": "How do you say 'Hello'?",
+                            "prompt": "Hello",
                             "options": ["valén", "janta", "seyén", "moyán"],
                             "answer": "valén"
                         }
@@ -348,7 +348,7 @@
                         "type": "multiple_choice",
                         "index": 11,
                         "content": {
-                            "prompt": "How do you say 'Please'?",
+                            "prompt": "Please",
                             "options": ["valén", "janta", "seyén", "moyán"],
                             "answer": "moyán"
                         }
@@ -374,7 +374,7 @@
                         "index": 1,
                         "content": {
                             "title": "Forming simple questions",
-                            "text": "When asking for things in Lexin, there are two types of questions to distinguish: Polar questions and content questions. While polar questions like 'Are you a human?' can be answered with 'yes' or 'no', content questions ask for missing information, like 'Who are you?'. In this lesson, we will take a look at polar questions and simple content questions, asking for the subject of a sentence."
+                            "text": "When asking for things in Lexin, there are two types of questions to distinguish: Polar questions and content questions.<hr/>While polar questions like <i>Are you a human?</i> can be answered with <i>yes</i> or <i>no</i>, content questions ask for missing information, like <i>Who are you?</i>.<hr/>In this lesson, we will take a look at polar questions and simple content questions, asking for the subject of a sentence."
                         }
                     },
                     {
@@ -382,7 +382,7 @@
                         "index": 2,
                         "content": {
                             "title": "Polar questions",
-                            "text": "Polar questions in Lexin are formed by adding two helper words, called particles, to the sentence. The first one is the question particle 'la', which is added to the front of the sentence. The second one, the emphasis particle 'to' is added after whatever word should be emphasized in the question."
+                            "text": "Polar questions in Lexin are formed by adding two helper words, called particles, to the sentence.<hr/>The first one is the question particle <b><i>la</i></b>, which is added to the front of the sentence.<hr/>The second one, the emphasis particle <b><i>to</i></b> is added after whatever word should be emphasized in the question."
                         }
                     },
                     {
@@ -396,7 +396,7 @@
                         "type": "arrange",
                         "index": 4,
                         "content": {
-                            "prompt": "How do you say 'Are <b>you</b> a woman'?",
+                            "prompt": "Are <b>you</b> a woman",
                             "options": ["la", "to", "selén", "jan"],
                             "answer": "la jan to selén"
                         }
@@ -405,7 +405,7 @@
                         "type": "arrange",
                         "index": 5,
                         "content": {
-                            "prompt": "How do you say 'Are you a <b>woman</b>'?",
+                            "prompt": "Are you a <b>woman</b>",
                             "options": ["la", "to", "selén", "jan"],
                             "answer": "la jan selén to"
                         }
@@ -415,7 +415,7 @@
                         "index": 6,
                         "content": {
                             "title": "Asking for a subject",
-                            "text": "For now, we will only consider one type of content question: The subject-question. It enables you to ask about the person who is the subject of a sentence. For this, instead of needing the particles 'la' and 'to', we simply add a single combined question word to the beginning of the sentence. It can take one of two forms: 'yato' for animate subjects and 'yarato' for inanimate subjects."
+                            "text": "For now, we will only consider one type of content question: The subject-question. It enables you to ask about the person who is the subject of a sentence.<hr/>For this, instead of needing the particles <b><i>la</i></b> and <b><i>to</i></b>, we simply add a single combined question word to the beginning of the sentence. It can take one of two forms: <b><i>yato</i></b> for animate subjects and <b><i>yarato</i></b>for inanimate subjects."
                         }
                     },
                     {
@@ -429,7 +429,7 @@
                         "type": "arrange",
                         "index": 9,
                         "content": {
-                            "prompt": "How do you say 'Who is that?'?",
+                            "prompt": "Who is that?",
                             "options": ["yato", "va", "ara"],
                             "answer": "yato va ara"
                         }
@@ -438,7 +438,7 @@
                         "type": "arrange",
                         "index": 10,
                         "content": {
-                            "prompt": "How do you say 'What is that?'?",
+                            "prompt": "What is that?",
                             "options": ["yarato", "va", "ara"],
                             "answer": "yarato va ara"
                         }
@@ -455,7 +455,7 @@
                         "type": "translate",
                         "index": 1,
                         "content": {
-                            "prompt": "How do you say 'Thank you'?",
+                            "prompt": "Thank you",
                             "answer": "seyén"
                         }
                     },
@@ -463,7 +463,7 @@
                         "type": "translate",
                         "index": 2,
                         "content": {
-                            "prompt": "How do you say 'It is a woman'?",
+                            "prompt": "It is a woman",
                             "answer": "va selén"
                         }
                     },
@@ -479,7 +479,7 @@
                         "type": "translate",
                         "index": 4,
                         "content": {
-                            "prompt": "How do you say 'I am'?",
+                            "prompt": "I am",
                             "answer": "dea"
                         }
                     },
@@ -495,7 +495,7 @@
                         "type": "translate",
                         "index": 6,
                         "content": {
-                            "prompt": "How do you say 'Are you a <b>man</b>'?",
+                            "prompt": "Are you a <b>man</b>",
                             "answer": "la jan curán to"
                         }
                     },
@@ -503,7 +503,7 @@
                         "type": "word_bank",
                         "index": 7,
                         "content": {
-                            "prompt": "How do you say 'You are a human'?",
+                            "prompt": "You are a human",
                             "options": ["jan", "lecu", "dea", "selén"],
                             "answer": "jan lecu"
                         }
@@ -520,7 +520,7 @@
                         "type": "word_bank",
                         "index": 9,
                         "content": {
-                            "prompt": "How do you say 'Yes, I am a woman'?",
+                            "prompt": "Yes, I am a woman",
                             "options": ["sayá", "dea", "selén", "curán"],
                             "answer": "sayá dea selén"
                         }
@@ -545,7 +545,7 @@
                         "index": 1,
                         "content": {
                             "title": "Expressing simple actions",
-                            "text": "For now, we have only learned how to describe and ask for what people and things <i>are</i>. Now, we want to look at what they <i>do</i>. For this, we will learn our first verbs."
+                            "text": "For now, we have only learned how to describe and ask for what people and things <b>are</b>. Now, we want to look at what they <b>do</b>. For this, we will learn our first verbs."
                         }
                     },
                     {
@@ -560,14 +560,14 @@
                         "index": 3,
                         "content": {
                             "title": "Conjugating verbs",
-                            "text": "Verbs in Lexin only consist of a short stem in their base form, like 'noró' (to eat) or 'le' (to drink). To use them in a sentence, we need to conjugate them in agreement with the subject of the sentence. For this, a suffix gets added to the end of the verb stem. For now, lets only look at the suffixes for the singular: '-ja' is the ending for the first person, '-nja' for the second person and '-va' for the third person."
+                            "text": "Verbs in Lexin only consist of a short stem in their base form, like <b><i>noró</i></b> (<i>To eat</i>) or <b><i>le</i></b> (<i>To drink</i>).<hr/>To use them in a sentence, we need to conjugate them in agreement with the subject of the sentence. For this, a suffix gets added to the end of the verb stem.<hr/>For now, lets only look at the suffixes for the singular: <b><i>-ja</i></b> is the ending for the first person, <b><i>-nja</i></b> for the second person and <b><i>-va</i></b> for the third person."
                         }
                     },
                     {
                         "type": "multiple_choice",
                         "index": 4,
                         "content": {
-                            "prompt": "How do you say 'I eat'?",
+                            "prompt": "I eat",
                             "options": ["norója", "janta", "seyén"],
                             "answer": "norója"
                         }
@@ -576,7 +576,7 @@
                         "type": "multiple_choice",
                         "index": 5,
                         "content": {
-                            "prompt": "How do you say 'You eat'?",
+                            "prompt": "You eat",
                             "options": ["norónja", "lecu", "selén"],
                             "answer": "norónja"
                         }
@@ -585,7 +585,7 @@
                         "type": "multiple_choice",
                         "index": 6,
                         "content": {
-                            "prompt": "How do you say 'He / she eats'?",
+                            "prompt": "He / she eats",
                             "options": ["noróva", "moyán", "cen"],
                             "answer": "noróva"
                         }
@@ -602,7 +602,7 @@
                         "type": "multiple_choice",
                         "index": 8,
                         "content": {
-                            "prompt": "How do you say 'I drink'?",
+                            "prompt": "I drink",
                             "options": ["norója", "leja", "noja"],
                             "answer": "leja"
                         }
@@ -611,7 +611,7 @@
                         "type": "multiple_choice",
                         "index": 9,
                         "content": {
-                            "prompt": "How do you say 'You have'?",
+                            "prompt": "You have",
                             "options": ["nonja", "leja", "noja"],
                             "answer": "nonja"
                         }
@@ -620,7 +620,7 @@
                         "type": "multiple_choice",
                         "index": 10,
                         "content": {
-                            "prompt": "How do you say 'He / she drinks'?",
+                            "prompt": "He / she drinks",
                             "options": ["leja", "lenja", "leva"],
                             "answer": "leva"
                         }
@@ -630,7 +630,7 @@
                         "index": 11,
                         "content": {
                             "title": "Referencing objects",
-                            "text": "The next step on our journey to full sentences is including objects in them. What if I don't want to say 'I drink', but 'I drink water'. For this, we will need some appropriate words."
+                            "text": "The next step on our journey to full sentences is including objects in them. What if I don't want to say <i>I drink</i>, but <i>I drink water</i>?. For this, we will need some appropriate words."
                         }
                     },
                     {
@@ -645,14 +645,14 @@
                         "index": 13,
                         "content": {
                             "title": "Objects in a sentence",
-                            "text": "To reference these objects in a sentence, we simple add it behind the verb. Simple, right? This is called the <i>object position</i>. Likewise, the space before the verb is called the <i>subject position</i>. There, we can reference who is doing the action, like in 'curán noróva naco' (The man eats bread)."
+                            "text": "To reference these objects in a sentence, we simple add it behind the verb. Simple, right? This is called the <b>object position</b>.<hr/>Likewise, the space before the verb is called the <b>subject position</b>. There, we can reference who is doing the action, like in <b><i>curán noróva naco</i></b> (<i>The man eats bread</i>)."
                         }
                     },
                     {
                         "type": "arrange",
                         "index": 14,
                         "content": {
-                            "prompt": "How do you say 'The woman drinks water'?",
+                            "prompt": "The woman drinks water",
                             "options": ["selén", "leva", "yeva"],
                             "answer": "selén leva yeva"
                         }
@@ -661,7 +661,7 @@
                         "type": "arrange",
                         "index": 15,
                         "content": {
-                            "prompt": "How do you say 'You have a bread'?",
+                            "prompt": "You have a bread",
                             "options": ["nonja", "naco"],
                             "answer": "nonja naco"
                         }
@@ -670,7 +670,7 @@
                         "type": "arrange",
                         "index": 16,
                         "content": {
-                            "prompt": "How do you say 'I eat this meat'?",
+                            "prompt": "I eat this meat",
                             "options": ["norója", "ara", "voro"],
                             "answer": "norója ara voro"
                         }
@@ -688,7 +688,7 @@
                         "index": 1,
                         "content": {
                             "title": "What about qualities?",
-                            "text": "Up until now, we have only talked about bare nouns like 'yeva' (water) and 'naco' (bread). But what if we want to describe their qualities and attributes? A bread can be big, and water can be hot. For this, we need to learn some adjectives, and how to use them in Lexin."
+                            "text": "Up until now, we have only talked about bare nouns like <b><i>yeva</i></b> (<i>Water</i>) and <b><i>naco</i></b> (<i>Bread</i>).<hr/>But what if we want to describe their qualities and attributes? A bread can be big, and water can be hot. For this, we need to learn some adjectives, and how to use them in Lexin."
                         }
                     },
                     {
@@ -702,7 +702,7 @@
                         "type": "multiple_choice",
                         "index": 3,
                         "content": {
-                            "prompt": "How do you say 'Good'?",
+                            "prompt": "Good",
                             "options": ["yen", "vonta", "nou", "voli"],
                             "answer": "yen"
                         }
@@ -711,7 +711,7 @@
                         "type": "multiple_choice",
                         "index": 4,
                         "content": {
-                            "prompt": "How do you say 'Bad'?",
+                            "prompt": "Bad",
                             "options": ["yen", "vonta", "nou", "voli"],
                             "answer": "vonta"
                         }
@@ -720,7 +720,7 @@
                         "type": "multiple_choice",
                         "index": 5,
                         "content": {
-                            "prompt": "How do you say 'Big'?",
+                            "prompt": "Big",
                             "options": ["yen", "vonta", "nou", "voli"],
                             "answer": "nou"
                         }
@@ -729,7 +729,7 @@
                         "type": "multiple_choice",
                         "index": 6,
                         "content": {
-                            "prompt": "How do you say 'Hot'?",
+                            "prompt": "Hot",
                             "options": ["yen", "vonta", "nou", "voli"],
                             "answer": "voli"
                         }
@@ -739,14 +739,14 @@
                         "index": 7,
                         "content": {
                             "title": "Adjectives in a sentence",
-                            "text": "To modify a noun with an adjectives, we simply put the adjective behind it. 'naco' (bread) becomes 'naco nou' (big bread) and 'yeva' (water) becomes 'yeva voli' (hot water)."
+                            "text": "To modify a noun with an adjectives, we simply put the adjective behind it. <b><i>naco</i></b> (<i>Bread</i>) becomes <b><i>naco nou</i></b> (<i>Big bread</i>) and <b><i>yeva</i></b> (<i>Water</i>) becomes <b><i>yeva voli</i></b> (<i>Hot water</i>)."
                         }
                     },
                     {
                         "type": "arrange",
                         "index": 8,
                         "content": {
-                            "prompt": "How do you say 'Good bread'?",
+                            "prompt": "Good bread",
                             "options": ["naco", "yen"],
                             "answer": "naco yen"
                         }
@@ -755,7 +755,7 @@
                         "type": "arrange",
                         "index": 9,
                         "content": {
-                            "prompt": "How do you say 'Hot water'?",
+                            "prompt": "Hot water",
                             "options": ["yeva", "voli"],
                             "answer": "yeva voli"
                         }
@@ -764,7 +764,7 @@
                         "type": "arrange",
                         "index": 10,
                         "content": {
-                            "prompt": "How do you say 'Big man'?",
+                            "prompt": "Big man",
                             "options": ["curán", "nou"],
                             "answer": "curán nou"
                         }
@@ -774,14 +774,14 @@
                         "index": 11,
                         "content": {
                             "title": "Adjectives in a sentence",
-                            "text": "Like in English, adjectives in Lexin can also be used as a <i>predicate</i>. This means that instead of 'yeva voli' (hot water) we can also say 'yeva va voli' (the water is hot). Of course, we can also combine both types of expressions and even use 'ara' (this) with them."
+                            "text": "Like in English, adjectives in Lexin can also be used as a <b>predicate</b>. This means that instead of <b><i>yeva voli</i></b> (<i>Hot water</i>) we can also say <b><i>yeva va voli</i></b> (<i>The water is hot</i>). Of course, we can also combine both types of expressions and even use <b><i>ara</i></b> (<i>This / That</i>) with them."
                         }
                     },
                     {
                         "type": "arrange",
                         "index": 12,
                         "content": {
-                            "prompt": "How do you say 'This big bread'?",
+                            "prompt": "This big bread",
                             "options": ["ara", "naco", "nou"],
                             "answer": "ara naco nou"
                         }
@@ -790,7 +790,7 @@
                         "type": "arrange",
                         "index": 13,
                         "content": {
-                            "prompt": "How do you say 'This is hot water'?",
+                            "prompt": "This is hot water",
                             "options": ["ara", "va", "yeva", "culi"],
                             "answer": "ara va yeva culi"
                         }
@@ -799,7 +799,7 @@
                         "type": "arrange",
                         "index": 14,
                         "content": {
-                            "prompt": "How do you say 'This big bread is good'?",
+                            "prompt": "This big bread is good",
                             "options": ["ara", "naco", "nou", "va", "yen"],
                             "answer": "ara naco nou va yen"
                         }
@@ -831,7 +831,7 @@
                         "type": "multiple_choice",
                         "index": 3,
                         "content": {
-                            "prompt": "How do you say 'Moon'?",
+                            "prompt": "Moon",
                             "options": ["run", "don", "catu", "nava"],
                             "answer": "run"
                         }
@@ -840,7 +840,7 @@
                         "type": "multiple_choice",
                         "index": 4,
                         "content": {
-                            "prompt": "How do you say 'Tree'?",
+                            "prompt": "Tree",
                             "options": ["run", "don", "catu", "nava"],
                             "answer": "don"
                         }
@@ -849,7 +849,7 @@
                         "type": "multiple_choice",
                         "index": 5,
                         "content": {
-                            "prompt": "How do you say 'Animal'?",
+                            "prompt": "Animal",
                             "options": ["run", "don", "catu", "nava"],
                             "answer": "catu"
                         }
@@ -858,7 +858,7 @@
                         "type": "multiple_choice",
                         "index": 6,
                         "content": {
-                            "prompt": "How do you say 'Night'?",
+                            "prompt": "Night",
                             "options": ["run", "don", "catu", "nava"],
                             "answer": "nava"
                         }
@@ -875,7 +875,7 @@
                         "type": "word_bank",
                         "index": 8,
                         "content": {
-                            "prompt": "How do you say 'This tree is big'?",
+                            "prompt": "This tree is big",
                             "options": ["ara", "naco", "nou", "va", "don"],
                             "answer": "ara don va nou"
                         }
@@ -884,7 +884,7 @@
                         "type": "word_bank",
                         "index": 9,
                         "content": {
-                            "prompt": "How do you say 'This is an animal'?",
+                            "prompt": "This is an animal",
                             "options": ["ara", "va", "catu", "noro", "jan"],
                             "answer": "ara va catu"
                         }
@@ -893,7 +893,7 @@
                         "type": "word_bank",
                         "index": 10,
                         "content": {
-                            "prompt": "How do you say 'A hot night is bad'?",
+                            "prompt": "A hot night is bad",
                             "options": ["don", "naco", "nava", "va", "yen", "vonta", "voli"],
                             "answer": "nava voli va vonta"
                         }
@@ -911,7 +911,7 @@
                         "index": 1,
                         "content": {
                             "title": "Needing and wishing",
-                            "text": "To express basic needs and wishes, there are two essential modal verbs in Lexin: 'yoré' (to want) and 'yendé' (to must). These two can be used in isolation or can be combined with another verb to modify its action."
+                            "text": "To express basic needs and wishes, there are two essential modal verbs in Lexin: <b><i>yoré</i></b> (<i>To want</i>) and <b><i>yendé</i></b> (<i>To must</i>). These two can be used in isolation or can be combined with another verb to modify its action."
                         }
                     },
                     {
@@ -919,7 +919,7 @@
                         "index": 2,
                         "content": {
                             "title": "Usage in isolation",
-                            "text": "When used in isolation, 'yoré' and 'yendé' are conjugated just like any other verb, with the suffixes we previously learned. For example, 'yoré' (to want) can become 'yoréja' (I want), and appear in a sentence like 'yoréja ara naco' (I want this bread)."
+                            "text": "When used in isolation, <b><i>yoré</i></b> and <b><i>yendé</i></b> are conjugated just like any other verb, with the suffixes we previously learned.<hr/>For example, <b><i>yoré</i></b> can become <b><i>yoréja</i></b> (<i>I want</i>), and appear in a sentence like <b><i>yoréja ara naco</i></b> (<i>I want this bread</i>)."
                         }
                     },
                     {
@@ -927,7 +927,7 @@
                         "index": 3,
                         "content": {
                             "title": "Usage with other verbs",
-                            "text": "Modal verbs can also be used in combination with other verbs, to express the need or want to do that action. In this case, they stay in their base form, and are simply added in front of the main verb of the sentence. For example 'norója naco' (I eat bread) can become 'yende norója naco' (I must eat bread)."
+                            "text": "Modal verbs can also be used in combination with other verbs, to express the need or want to do that action. In this case, they stay in their base form, and are simply added in front of the main verb of the sentence.<hr/>For example, <b><i>norója naco</i></b> (<i>I eat bread</i>) can become <b><i>yende norója naco</i></b> (<i>I must eat bread</i>)."
                         }
                     },
                     {
@@ -941,7 +941,7 @@
                         "type": "multiple_choice",
                         "index": 5,
                         "content": {
-                            "prompt": "How do you say 'to want'?",
+                            "prompt": "to want",
                             "options": ["yoré", "yendé", "noró", "le"],
                             "answer": "yoré"
                         }
@@ -950,7 +950,7 @@
                         "type": "multiple_choice",
                         "index": 6,
                         "content": {
-                            "prompt": "How do you say 'to must'?",
+                            "prompt": "to must",
                             "options": ["yoré", "yendé", "noró", "le"],
                             "answer": "yendé"
                         }
@@ -959,7 +959,7 @@
                         "type": "arrange",
                         "index": 7,
                         "content": {
-                            "prompt": "How do you say 'He wants bread'?",
+                            "prompt": "He wants bread",
                             "options": ["yoré", "va", "naco"],
                             "answer": "yoréja naco"
                         }
@@ -968,7 +968,7 @@
                         "type": "arrange",
                         "index": 8,
                         "content": {
-                            "prompt": "How do you say 'I must eat that meat'?",
+                            "prompt": "I must eat that meat",
                             "options": ["yende", "noró", "ja", "ara", "voro"],
                             "answer": "yende norója ara voco"
                         }
@@ -977,7 +977,7 @@
                         "type": "word_bank",
                         "index": 9,
                         "content": {
-                            "prompt": "How do you say 'I want to have water'?",
+                            "prompt": "I want to have water",
                             "options": ["no", "ja", "va", "yeva", "yore", "yende"],
                             "answer": "yore noja yeva"
                         }
@@ -986,7 +986,7 @@
                         "type": "word_bank",
                         "index": 10,
                         "content": {
-                            "prompt": "How do you say 'You must drink that water'?",
+                            "prompt": "You must drink that water",
                             "options": ["ara", "ja", "nja", "yeva", "yore", "yende", "le"],
                             "answer": "yende lenja ara yeva"
                         }
@@ -1003,7 +1003,7 @@
                         "type": "word_bank",
                         "index": 1,
                         "content": {
-                            "prompt": "How do you say 'You have meat'?",
+                            "prompt": "You have meat",
                             "options": ["nonja", "voro", "naco", "noja", "ara"],
                             "answer": "nonja voro"
                         }
@@ -1012,7 +1012,7 @@
                         "type": "word_bank",
                         "index": 2,
                         "content": {
-                            "prompt": "How do you say 'I eat this bread'?",
+                            "prompt": "I eat this bread",
                             "options": ["norója", "ara", "naco", "leja", "voli"],
                             "answer": "norója ara naco"
                         }
@@ -1021,7 +1021,7 @@
                         "type": "word_bank",
                         "index": 3,
                         "content": {
-                            "prompt": "How do you say 'This is a big bread'?",
+                            "prompt": "This is a big bread",
                             "options": ["ara", "va", "yeva", "culi", "nou", "naco"],
                             "answer": "ara va naco nou"
                         }
@@ -1030,7 +1030,7 @@
                         "type": "word_bank",
                         "index": 4,
                         "content": {
-                            "prompt": "How do you say 'This hot water is good'?",
+                            "prompt": "This hot water is good",
                             "options": ["ara", "naco", "nou", "va", "yen", "yeva", "voli"],
                             "answer": "ara yeva voli va yen"
                         }
@@ -1039,7 +1039,7 @@
                         "type": "word_bank",
                         "index": 5,
                         "content": {
-                            "prompt": "How do you say 'It is a hot night'?",
+                            "prompt": "It is a hot night",
                             "options": ["ara", "va", "catu", "jan", "voli", "nava"],
                             "answer": "va nava voli"
                         }
@@ -1048,7 +1048,7 @@
                         "type": "word_bank",
                         "index": 6,
                         "content": {
-                            "prompt": "How do you say 'The moon is big'?",
+                            "prompt": "The moon is big",
                             "options": ["don", "naco", "run", "va", "yen", "nou"],
                             "answer": "run va nou"
                         }
@@ -1057,7 +1057,7 @@
                         "type": "word_bank",
                         "index": 7,
                         "content": {
-                            "prompt": "How do you say 'You must eat that meat'?",
+                            "prompt": "You must eat that meat",
                             "options": ["yende", "noró", "nja", "ara", "voro", "ja", "yeva"],
                             "answer": "yende norónja ara voro"
                         }
@@ -1066,7 +1066,7 @@
                         "type": "word_bank",
                         "index": 8,
                         "content": {
-                            "prompt": "How do you say 'I want to have the bread'?",
+                            "prompt": "I want to have the bread",
                             "options": ["no", "ja", "va", "naco", "yore", "yende"],
                             "answer": "yore noja naco"
                         }
@@ -1075,7 +1075,7 @@
                         "type": "word_bank",
                         "index": 9,
                         "content": {
-                            "prompt": "How do you say 'He must drink water'?",
+                            "prompt": "He must drink water",
                             "options": ["ara", "va", "nja", "yeva", "yore", "yende", "le"],
                             "answer": "yende leva yeva"
                         }
@@ -1100,7 +1100,7 @@
                         "index": 1,
                         "content": {
                             "title": "Expressing direction of movement",
-                            "text": "To express movement and direction in Lexin, we can make use of a group of words called 'Local aspects'. They can be used to indicate a dynamic movement as well as a static position somewhere. But first, we need to learn some new verbs and nouns to even enable us to speak about that topic."
+                            "text": "To express movement and direction in Lexin, we can make use of a group of words called <b>local aspects</b>. They can be used to indicate a dynamic movement as well as a static position somewhere. But first, we need to learn some new verbs and nouns to even enable us to speak about that topic."
                         }
                     },
                     {
@@ -1114,7 +1114,7 @@
                         "type": "multiple_choice",
                         "index": 3,
                         "content": {
-                            "prompt": "How do you say 'City'?",
+                            "prompt": "City",
                             "options": ["dana", "veala", "don", "cen"],
                             "answer": "dana"
                         }
@@ -1123,7 +1123,7 @@
                         "type": "multiple_choice",
                         "index": 4,
                         "content": {
-                            "prompt": "How do you say 'House'?",
+                            "prompt": "House",
                             "options": ["nava", "naco", "veala", "va"],
                             "answer": "veala"
                         }
@@ -1132,7 +1132,7 @@
                         "type": "arrange",
                         "index": 5,
                         "content": {
-                            "prompt": "How do you say 'I see a house'?",
+                            "prompt": "I see a house",
                             "options": ["co", "ja", "veala"],
                             "answer": "coja veala"
                         }
@@ -1141,7 +1141,7 @@
                         "type": "word_bank",
                         "index": 6,
                         "content": {
-                            "prompt": "How do you say 'He wants to see the city'?",
+                            "prompt": "He wants to see the city",
                             "options": ["nja", "co", "yore", "dana"],
                             "answer": "yore conja dana"
                         }
@@ -1150,7 +1150,7 @@
                         "type": "arrange",
                         "index": 7,
                         "content": {
-                            "prompt": "How do you say 'He goes'?",
+                            "prompt": "He goes",
                             "options": ["ta", "va"],
                             "answer": "tava"
                         }
@@ -1159,7 +1159,7 @@
                         "type": "arrange",
                         "index": 8,
                         "content": {
-                            "prompt": "How do you say 'He comes'?",
+                            "prompt": "He comes",
                             "options": ["tayé", "va"],
                             "answer": "tayéva"
                         }
@@ -1169,7 +1169,7 @@
                         "index": 9,
                         "content": {
                             "title": "Local aspects",
-                            "text": "The two local aspects we will cover in this lesson are 'ye' (to / towards) and 'majé' (from). They are placed before any noun and express the movement towards or away from that location. For example 'ye' (to / towards) can be used like 'ye dana' (to the city)."
+                            "text": "The two local aspects we will cover in this lesson are <b><i>ye</i></b> (<i>To / Towards</i>) and <b><i>majé</i></b> (<i>From</i>). They are placed before any noun and express the movement towards or away from that location.<hr/>For example, <b><i>ye</i></b> can be used like <b><i>ye dana</i></b> (<i>To the city</i>)."
                         }
                     },
                     {
@@ -1183,7 +1183,7 @@
                         "type": "arrange",
                         "index": 11,
                         "content": {
-                            "prompt": "How do you say 'I go to the house'?",
+                            "prompt": "I go to the house",
                             "options": ["ta", "ja", "veala", "ye"],
                             "answer": "taja ye veala"
                         }
@@ -1192,7 +1192,7 @@
                         "type": "arrange",
                         "index": 12,
                         "content": {
-                            "prompt": "How do you say 'He comes from the city'?",
+                            "prompt": "He comes from the city",
                             "options": ["tayé", "va", "dana", "majé"],
                             "answer": "tayéva majé dana"
                         }
@@ -1201,7 +1201,7 @@
                         "type": "word_bank",
                         "index": 13,
                         "content": {
-                            "prompt": "How do you say 'You go to the tree'?",
+                            "prompt": "You go to the tree",
                             "options": ["ta", "nja", "dana", "majé", "ye", "don", "tayé"],
                             "answer": "tanja ye don"
                         }
@@ -1233,7 +1233,7 @@
                         "type": "multiple_choice",
                         "index": 3,
                         "content": {
-                            "prompt": "How do you say 'Mother'?",
+                            "prompt": "Mother",
                             "options": ["manya", "mida", "tanvo", "suréda"],
                             "answer": "manya"
                         }
@@ -1242,7 +1242,7 @@
                         "type": "multiple_choice",
                         "index": 4,
                         "content": {
-                            "prompt": "How do you say 'Father'?",
+                            "prompt": "Father",
                             "options": ["manya", "mida", "tanvo", "suréda"],
                             "answer": "tanvo"
                         }
@@ -1251,7 +1251,7 @@
                         "type": "multiple_choice",
                         "index": 5,
                         "content": {
-                            "prompt": "How do you say 'Friend'?",
+                            "prompt": "Friend",
                             "options": ["manya", "mida", "tanvo", "suréda"],
                             "answer": "mida"
                         }
@@ -1260,7 +1260,7 @@
                         "type": "multiple_choice",
                         "index": 6,
                         "content": {
-                            "prompt": "How do you say 'Acquaintance'?",
+                            "prompt": "Acquaintance",
                             "options": ["manya", "mida", "tanvo", "suréda"],
                             "answer": "suréda"
                         }
@@ -1277,7 +1277,7 @@
                         "type": "translate",
                         "index": 8,
                         "content": {
-                            "prompt": "How do you say 'Mother'?",
+                            "prompt": "Mother",
                             "answer": "manya"
                         }
                     },
@@ -1285,7 +1285,7 @@
                         "type": "translate",
                         "index": 9,
                         "content": {
-                            "prompt": "How do you say 'Father'?",
+                            "prompt": "Father",
                             "answer": "tanvo"
                         }
                     },
@@ -1293,7 +1293,7 @@
                         "type": "translate",
                         "index": 10,
                         "content": {
-                            "prompt": "How do you say 'Friend'?",
+                            "prompt": "Friend",
                             "answer": "mida"
                         }
                     },
@@ -1301,7 +1301,7 @@
                         "type": "translate",
                         "index": 11,
                         "content": {
-                            "prompt": "How do you say 'Acquaintance'?",
+                            "prompt": "Acquaintance",
                             "answer": "suréda"
                         }
                     }
@@ -1318,7 +1318,7 @@
                         "index": 1,
                         "content": {
                             "title": "Possession and names",
-                            "text": "Now that we know how to talk about people around us, lets take a look at possession. To express possession in Lexin, the particle 'sa' is used. It can appear between any two nouns or pronouns, indicating that the first noun belongs to the second. For example, 'veala sa selén' (The house of the woman) or 'tanvo sa mida' (The father of a friend)."
+                            "text": "Now that we know how to talk about people around us, lets take a look at possession. To express possession in Lexin, the particle <b><i>sa</i></b> is used. It can appear between any two nouns or pronouns, indicating that the first noun belongs to the second.<hr/>For example, <b><i>veala sa selén</i></b> (<i>The house of the woman</i>) or <b><i>tanvo sa mida</i></b> (<i>The father of a friend</i>)."
                         }
                     },
                     {
@@ -1326,7 +1326,7 @@
                         "index": 2,
                         "content": {
                             "title": "Indicating personal possession",
-                            "text": "Now we know how to express other peoples possessions, but what if we want to say something like 'my mother' or 'his father'. For this, we use special possession pronouns that exist for all persons. In this lesson, we will focus on two of them: 'saví' (my / of me) and 'sacá' (your / of you). Similar to the particle 'sa', they follow the noun that is being possessed. So while 'tanvo sa mida' means 'the father of a friend', 'tanvo saví' means 'my father'."
+                            "text": "Now we know how to express other peoples possessions, but what if we want to say something like <i>my mother</i> or <i>his father</i>. For this, we use special possession pronouns that exist for all persons.<hr/>In this lesson, we will focus on two of them: <b><i>saví</i></b> (<i>My / Of me</i>) and <b><i>sacá</i></b> (<i>Your / Of you</i>).<hr/>Similar to the particle <b><i>sa</i></b>, they follow the noun that is being possessed. So while <b><i>tanvo sa mida</i></b> means <i>the father of a friend</i>, <b><i>tanvo saví</i></b> means <i>my father</i>."
                         }
                     },
                     {
@@ -1340,7 +1340,7 @@
                         "type": "multiple_choice",
                         "index": 4,
                         "content": {
-                            "prompt": "How do you say 'Name'?",
+                            "prompt": "Name",
                             "options": ["tanvo", "selén", "veala", "sienda"],
                             "answer": "sienda"
                         }
@@ -1349,7 +1349,7 @@
                         "type": "arrange",
                         "index": 5,
                         "content": {
-                            "prompt": "How do you say 'My name'?",
+                            "prompt": "My name",
                             "options": ["saví", "sienda"],
                             "answer": "sienda saví"
                         }
@@ -1358,7 +1358,7 @@
                         "type": "arrange",
                         "index": 6,
                         "content": {
-                            "prompt": "How do you say 'Your father'?",
+                            "prompt": "Your father",
                             "options": ["sacá", "tanvo"],
                             "answer": "sienda saví"
                         }
@@ -1367,7 +1367,7 @@
                         "type": "arrange",
                         "index": 7,
                         "content": {
-                            "prompt": "How do you say 'My mothers house'?",
+                            "prompt": "My mothers house",
                             "options": ["veala", "manya", "sa"],
                             "answer": "veala sa manya"
                         }
@@ -1376,7 +1376,7 @@
                         "type": "arrange",
                         "index": 8,
                         "content": {
-                            "prompt": "How do you say 'This is my water'?",
+                            "prompt": "This is my water",
                             "options": ["yeva", "ara", "saví", "va"],
                             "answer": "ara va yeva saví"
                         }
@@ -1385,7 +1385,7 @@
                         "type": "arrange",
                         "index": 9,
                         "content": {
-                            "prompt": "How do you say 'I want to see my mother'?",
+                            "prompt": "I want to see my mother",
                             "options": ["yore", "co", "ja", "manya", "saví"],
                             "answer": "yore coja manya saví"
                         }
@@ -1394,7 +1394,7 @@
                         "type": "arrange",
                         "index": 10,
                         "content": {
-                            "prompt": "How do you say 'My friend wants to eat your bread'?",
+                            "prompt": "My friend wants to eat your bread",
                             "options": ["mida", "saví", "yore", "noró", "va", "naco", "sacá"],
                             "answer": "mida saví yore noróva naco sacá"
                         }
@@ -1412,7 +1412,7 @@
                         "index": 1,
                         "content": {
                             "title": "Asking for location",
-                            "text": "Now that we have enough vocabulary to express spacial relations, let's learn the next type of question: The location-question. With it, we can ask <i>where</i> something is located. In its most most basic form, it works similar to the subject question word: We take the question word 'conto' (where) and place it at the beginning of the sentence. 'norónja' (You eat) becomes 'conto norónja' (Where do you eat?)."
+                            "text": "Now that we have enough vocabulary to express spacial relations, let's learn the next type of question: The <b>location-question</b>. With it, we can ask <b>where</b> something is located.<hr/>In its most most basic form, it works similar to the subject question word: We take the question word <b><i>conto</i></b> (<i>Where</i>) and place it at the beginning of the sentence. <b><i>norónja</i></b> (<i>You eat</i>) becomes <b><i>conto norónja</i></b> (<i>Where do you eat?</i>)."
                         }
                     },
                     {
@@ -1420,7 +1420,7 @@
                         "index": 2,
                         "content": {
                             "title": "Describing location",
-                            "text": "In a similar fashion, we can answer such a question. Instead of using 'conto' (where) in the beginning of the sentence, we add a location aspect like 'ayó' (here) or 'acó' (there) to the end of it. 'norója' (I eat) becomes 'norója acó' (I eat there)."
+                            "text": "In a similar fashion, we can answer such a question. Instead of using <b><i>conto</i></b> in the beginning of the sentence, we add a location aspect like <b><i>ayó</i></b> (<i>Here</i>) or <b><i>acó</i></b> (<i>There</i>) to the end of it. <b><i>norója</i></b> (<i>I eat</i>) becomes <b><i>norója acó</i></b> (<i>I eat there</i>)."
                         }
                     },
                     {
@@ -1428,15 +1428,15 @@
                         "index": 3,
                         "content": {
                             "title": "Asking where someone is",
-                            "text": "To make thing a bit more complicated, location questions with the verb 'de' (to be) require special attention. We can't just ask something like 'conto va selén' (Where is the woman?). In Lexin, the verb always has to follow after the subject of the sentence. Therefore, the sentence would have to look like 'conto selén va'. However, this is considered quite unnatural in Lexin."
+                            "text": "To make thing a bit more complicated, location questions with the verb <b><i>de</i></b> (<i>To be</i>) require special attention. We can't just ask something like <b><i>conto va selén</i></b> (<i>Where is the woman?</i>). In Lexin, the verb always has to follow after the subject of the sentence. Therefore, the sentence would have to be <b><i>conto selén va</i></b>, which is considered quite unnatural in Lexin."
                         }
                     },
                     {
                         "type": "info",
                         "index": 4,
                         "content": {
-                            "title": "A new use for 'la'",
-                            "text": "Instead, we use a second particle to indicate where the location would normally be expressed in the sentence. For this, we use the question particle 'la' again. Now, instead of being placed at the beginning of the sentence, it follows after the verb to fill the empty space there, kind of like a mental placeholder. The correct way to ask 'Where is the woman?' is therefore 'conto selén va la', and the answer could be 'va acó' (She is there)."
+                            "title": "A new use for <b><i>la</i></b>",
+                            "text": "Instead, we use a second particle to indicate where the location would normally be expressed in the sentence. For this, we use the question particle <b><i>la</i></b> again. Now, instead of being placed at the beginning of the sentence, it follows after the verb to fill the empty space there, kind of like a mental placeholder.<hr/>The correct way to ask <i>Where is the woman?</i> is therefore <b><i>conto selén va la</i></b>, and the answer could be <b><i>va acó</i></b> (<i>She is there</i>)."
                         }
                     },
                     {
@@ -1450,7 +1450,7 @@
                         "type": "multiple_choice",
                         "index": 6,
                         "content": {
-                            "prompt": "How do you say 'Where'?",
+                            "prompt": "Where",
                             "options": ["conto", "ayó", "acó"],
                             "answer": "conto"
                         }
@@ -1459,7 +1459,7 @@
                         "type": "multiple_choice",
                         "index": 7,
                         "content": {
-                            "prompt": "How do you say 'Here'?",
+                            "prompt": "Here",
                             "options": ["conto", "ayó", "acó"],
                             "answer": "ayó"
                         }
@@ -1468,7 +1468,7 @@
                         "type": "multiple_choice",
                         "index": 8,
                         "content": {
-                            "prompt": "How do you say 'There'?",
+                            "prompt": "There",
                             "options": ["conto", "ayó", "acó"],
                             "answer": "acó"
                         }
@@ -1477,7 +1477,7 @@
                         "type": "arrange",
                         "index": 9,
                         "content": {
-                            "prompt": "How do you say 'Where is your house?'?",
+                            "prompt": "Where is your house?",
                             "options": ["veala", "sacá", "va", "conto", "la"],
                             "answer": "conto veala sacá va la"
                         }
@@ -1486,7 +1486,7 @@
                         "type": "arrange",
                         "index": 10,
                         "content": {
-                            "prompt": "How do you say 'Where does she drink?'?",
+                            "prompt": "Where does she drink?",
                             "options": ["conto", "le", "va"],
                             "answer": "conto leva"
                         }
@@ -1495,7 +1495,7 @@
                         "type": "arrange",
                         "index": 11,
                         "content": {
-                            "prompt": "How do you say 'Where do you go to?'?",
+                            "prompt": "Where do you go to?",
                             "options": ["conto", "ta", "nja", "ye", "la"],
                             "answer": "conto tanja ye la"
                         }
@@ -1504,7 +1504,7 @@
                         "type": "arrange",
                         "index": 12,
                         "content": {
-                            "prompt": "How do you say 'I am here'?",
+                            "prompt": "I am here",
                             "options": ["dea", "ayó"],
                             "answer": "dea ayó"
                         }
@@ -1513,7 +1513,7 @@
                         "type": "arrange",
                         "index": 13,
                         "content": {
-                            "prompt": "How do you say 'He is there'?",
+                            "prompt": "He is there",
                             "options": ["va", "acó"],
                             "answer": "va acó"
                         }
@@ -1530,7 +1530,7 @@
                         "type": "translate",
                         "index": 1,
                         "content": {
-                            "prompt": "How do you say 'Father'?",
+                            "prompt": "Father",
                             "answer": "tanvo"
                         }
                     },
@@ -1538,7 +1538,7 @@
                         "type": "translate",
                         "index": 2,
                         "content": {
-                            "prompt": "How do you say 'Friend'?",
+                            "prompt": "Friend",
                             "answer": "mida"
                         }
                     },
@@ -1546,7 +1546,7 @@
                         "type": "translate",
                         "index": 3,
                         "content": {
-                            "prompt": "How do you say 'Acquaintance'?",
+                            "prompt": "Acquaintance",
                             "answer": "suréda"
                         }
                     },
@@ -1554,7 +1554,7 @@
                         "type": "word_bank",
                         "index": 4,
                         "content": {
-                            "prompt": "How do you say 'Father goes to the big city'?",
+                            "prompt": "Father goes to the big city",
                             "options": ["tanvo", "ta", "va", "dana", "ye", "nou", "majé", "tayé"],
                             "answer": "tanvo tava ye dana nou"
                         }
@@ -1563,7 +1563,7 @@
                         "type": "word_bank",
                         "index": 5,
                         "content": {
-                            "prompt": "How do you say 'I must go to the tree'?",
+                            "prompt": "I must go to the tree",
                             "options": ["ta", "ja", "dana", "yende", "ye", "don", "tayé"],
                             "answer": "yende taja ye don"
                         }
@@ -1572,7 +1572,7 @@
                         "type": "arrange",
                         "index": 6,
                         "content": {
-                            "prompt": "How do you say 'I want to see my mother's friend'?",
+                            "prompt": "I want to see my mother's friend",
                             "options": ["yore", "co", "ja", "manya", "saví", "mida", "sa"],
                             "answer": "yore coja mida sa manya saví"
                         }
@@ -1581,7 +1581,7 @@
                         "type": "arrange",
                         "index": 7,
                         "content": {
-                            "prompt": "How do you say 'My acquaintance wants to drink your water'?",
+                            "prompt": "My acquaintance wants to drink your water",
                             "options": ["suréda", "saví", "yore", "le", "va", "yeva", "sacá"],
                             "answer": "suréda saví yore leva yeva sacá"
                         }
@@ -1590,7 +1590,7 @@
                         "type": "arrange",
                         "index": 8,
                         "content": {
-                            "prompt": "How do you say 'Where does he eat?'?",
+                            "prompt": "Where does he eat?",
                             "options": ["conto", "noró", "va"],
                             "answer": "conto noróva"
                         }
@@ -1599,7 +1599,7 @@
                         "type": "arrange",
                         "index": 9,
                         "content": {
-                            "prompt": "How do you say 'Where do you come from?'?",
+                            "prompt": "Where do you come from?",
                             "options": ["conto", "tayé", "nja", "majé", "la"],
                             "answer": "conto tayénja majé la"
                         }

@@ -18,12 +18,12 @@
     <div class="progress-grid-wrapper">
         <div class="progress-panel accuracy-panel">
             <p class="progress-description">Current Overall Accuracy:</p>
-            <p class="total-accuracy">{calculatedAccuracy}%</p>
+            <p class="total-accuracy">{isNaN(calculatedAccuracy) ? '0': calculatedAccuracy}%</p>
         </div>
 
         <div class="progress-panel lesson-progress-panel">
             <p class="progress-description">Total Lesson Progress:</p>
-            <p class="lesson-progress">{initialLessons}/{data.totalCourseLessons} ({initialLessons/data.totalCourseLessons*100}%)</p>
+            <p class="lesson-progress">{initialLessons}/{data.totalCourseLessons} ({(initialLessons/data.totalCourseLessons*100).toFixed(2)}%)</p>
         </div>
 
         <div class="progress-panel total-lessons-panel">

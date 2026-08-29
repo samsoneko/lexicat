@@ -9,7 +9,7 @@
 
 </script>
 
-<h2>New words introduced:</h2>
+<p class="exercise-prompt">New words introduced:</p>
 
 <div class="vocab-area">
     {#each content["options"] as slug}

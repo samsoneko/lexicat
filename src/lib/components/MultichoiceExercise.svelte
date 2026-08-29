@@ -21,7 +21,7 @@
 
 </script>
 
-<h3>{@html content["prompt"]}</h3>
+<p class="exercise-prompt">How do you say: '{@html content["prompt"]}'?</p>
 
 {#if !isCorrect}
     {#each content["options"] as option}

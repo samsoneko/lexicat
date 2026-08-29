@@ -8,7 +8,7 @@
 
 </script>
 
-<h3>{@html content["title"]}</h3>
+<p class="exercise-prompt">{@html content["title"]}</p>
 
 <div class="info-panel">
     {@html content["text"]}

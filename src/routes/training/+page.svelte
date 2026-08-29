@@ -41,7 +41,7 @@
 
 <h2>Vocabulary</h2>
 <section class="centered-section">
-    <p>You have unlocked <b>{data.wordMap.length}</b> out of {data.totalVocabulary} words!</p>
+    <p>You have unlocked <b>{data.wordMap.length}</b> out of {data.totalCourseVocabulary} words!</p>
     <button class="default-button" onclick={() => goto("/training/vocabulary")}>View vocabulary <i class="fas fa-book"></i></button>
 
     <p>You have <b>{todaysVocabulary.length}</b> words to review today!</p>

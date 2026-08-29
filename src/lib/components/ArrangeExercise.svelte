@@ -38,7 +38,7 @@
 
 </script>
 
-<h2>{@html content["prompt"]}</h2>
+<p class="exercise-prompt">How do you say: '{@html content["prompt"]}'?</p>
 
 {#if !isCorrect}
 	<div>
