@@ -97,7 +97,11 @@ h1, h2, h3 {
     text-align: center;
 }
 
-.app-content::-webkit-scrollbar {
+hr {
+    border: var(--border);
+}
+
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -174,10 +178,6 @@ h1, h2, h3 {
 
 .exercise-prompt {
     font-size: 1.5rem;
-}
-
-hr {
-    border: var(--border);
 }
 
 .page-spacer {

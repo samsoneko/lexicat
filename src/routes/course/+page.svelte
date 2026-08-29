@@ -1,5 +1,4 @@
-<script>
-    import { enhance } from '$app/forms';
+<script lang="ts">
     let { data } = $props();
 </script>
 
@@ -8,8 +7,9 @@
     
     <form method="POST">
         <div class="options-div">
-            <button class="default-button option-button" type="submit" name="course" value="lx">Lexin</button>
-            <button class="default-button option-button" type="submit" name="course" value="sg">Sangot</button>
+            {#each data.courses as course}
+                <button class="default-button option-button" type="submit" name="course" value="{course.id}">{course.name.charAt(0).toUpperCase() + course.name.slice(1)}</button>
+            {/each}
         </div>
     </form>
 </div>

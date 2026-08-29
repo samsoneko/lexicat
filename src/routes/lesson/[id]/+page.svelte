@@ -23,6 +23,7 @@
     
     const scorableLessons = $derived(data.exercises.filter((exercise: { type: string }) => exercise.type !== 'info' && exercise.type !== 'vocab').length);
 
+    // Manage exercise state and switch to next exercise
     function nextQuestion() {
         if (currentIndex < data.exercises.length - 1) {
             currentIndex += 1;
@@ -58,6 +59,7 @@
     {#if data.exercises.length === 0}
         <p>No content available yet.</p>
     {:else}
+        <!-- Exercise section -->
         <section class="centered-section center-text">
             <div>
                 <h2 class="exercise-title">{String(currentExercise.type).charAt(0).toUpperCase() + String(currentExercise.type).slice(1).replaceAll('_', ' ')}</h2>
@@ -89,6 +91,7 @@
         {/if}
     {/if}
 {:else}
+    <!-- Lesson complete section -->
     <div class="centered-section">
         <h2>Lesson complete</h2>
         <p>Your Score is: {Math.round((score / scorableLessons) * 100)}%</p>

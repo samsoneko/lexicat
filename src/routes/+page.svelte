@@ -1,7 +1,7 @@
 <script lang="ts">
     let { data } = $props();
 
-    const completedLessonIds = new Set(data.statistics.map(entry => entry.lesson));
+    const completedLessonIds = $derived(new Set(data.statistics.map(entry => entry.lesson)));
 
     // Function for calculating an individual color based on the index of a chapter
     function getChapterColor(index = 0) {

@@ -1,6 +1,4 @@
 <script lang="ts">
-    import { readable } from 'svelte/store';
-
 	let { data } = $props();
 
     let totalScoresSum = $derived(data.progress.reduce((sum, item) => sum + item.score, 0));

@@ -2,7 +2,7 @@
     import { goto } from '$app/navigation';
 	let { data } = $props();
 
-    const humanReadableDate = $derived(new Date(Date.parse(data.user.created)).toDateString())
+    const humanReadableDate = $derived(new Date(Date.parse(data.user!.created)).toDateString())
 </script>
 
 <h1>Profile</h1>

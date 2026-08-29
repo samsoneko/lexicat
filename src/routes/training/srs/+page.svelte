@@ -6,7 +6,7 @@
     // Calculate all words that have to be reviewed today
     let todaysVocabulary = $derived.by(() => {
 		let totalVocabulary = JSON.parse(JSON.stringify(data.wordMap)); // Create deep copy
-        let todaysVocabulary : Object[] = [];
+        let todaysVocabulary = [];
 		for (const word of totalVocabulary) {
             const reviewDay = new Date(Date.parse(word.updated) + (60 * 60 * 24 * word.interval * 1000));
             const currentDay = new Date(Date.now());
@@ -50,7 +50,7 @@
 <section class="centered-section">
     {#if !allVocabDone}
         {#if todaysVocabulary.length === 0}
-            <p>No content available yet.</p>
+            <p>No words to review today.</p>
         {:else}
                 <h2>Vocabulary review</h2>
                 <h3>Recall the meaning of the following word:</h3>

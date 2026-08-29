@@ -1,9 +1,14 @@
-import type { PageServerLoad } from '../../$types';
+import type { PageServerLoad } from './$types';
 import { error } from '@sveltejs/kit';
 
 export const load: PageServerLoad = async ({ params, locals }) => {
+    // Authentication
+    if (!locals.pb.authStore.isValid || !locals.pb.authStore.record) {
+        throw error(401, 'Unauthorized request.');
+    }
+    
     const LESSON_TYPE = params.lesson_type;
-    const NUMBER = params.num;
+    const NUMBER = Number(params.num);
 
     try {
         const viableExercises = await locals.pb.collection('exercises').getList(1, NUMBER, {

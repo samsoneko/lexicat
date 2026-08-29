@@ -24,17 +24,7 @@ export const actions = {
             // Automatically log them in after creating the account
             await locals.pb.collection('users').authWithPassword(email, password);
         } catch (err) {
-            // Log the complete error object to the terminal for debugging
-            console.error("PocketBase Error Details:", err.data);
-
-            // Extract PocketBases specific error message, fallback if unavailable
-            const serverMessage = err?.data?.message || 'Registration failed.';
-            
-            return fail(400, { 
-                username, 
-                email, 
-                error: serverMessage 
-            });
+            return fail(400, { username, email, error: 'Registration failed.' });
         }
 
         // Redirect to the course selection after registration
