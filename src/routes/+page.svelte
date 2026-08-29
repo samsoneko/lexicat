@@ -171,4 +171,11 @@
         background-color: rgba(0, 0, 0, 0.3);
         transform: scale(1.1);
     }
+
+    /* On mobile, the horizontal curve offset messes with the layout */
+    @media screen and (max-width: 600px) {
+        .lesson-panel {
+            margin: 0px 0px 16px 0px;
+        }
+    }
 </style>

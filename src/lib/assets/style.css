@@ -18,7 +18,8 @@
 
     --text-color: white;
     --subtext-color: rgba(255, 255, 255, 0.5);
-    --link-color: lightskyblue;
+    --link-color: #b6e6ff;
+    --language-color: #a5f1ce;
 
     --violet-dark: #4d1c96;
     --violet-light: #6d28d8;
@@ -54,7 +55,8 @@ body.light-theme {
 
     --text-color: black;
     --subtext-color: rgba(0, 0, 0, 0.5);
-    --link-color: darkblue;
+    --link-color: #0a2e47;
+    --language-color: #005f45;
 
     --violet-dark: #8d5df8;
     --violet-light: #a88bfa;
@@ -101,6 +103,29 @@ hr {
     border: var(--border);
 }
 
+b {
+    color: var(--language-color);
+}
+
+input {
+    font-size: 1.2rem;
+    border: var(--border);
+    background-color: var(--layer-1);
+    padding: var(--padding-s);
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+}
+
+select {
+    border: var(--border);
+    background-color: var(--layer-1);
+    padding: var(--padding-s);
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -131,7 +156,7 @@ hr {
     margin: 4px;
     border: var(--border);
     background-color: var(--layer-1);
-    color: var(--text-color);
+    color: var(--language-color);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius-s);
     cursor: pointer;
@@ -142,7 +167,7 @@ hr {
     margin: 4px;
     border: var(--border-active);
     background-color: var(--hover-color);
-    color: var(--text-color);
+    color: var(--language-color);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius-s);
     cursor: pointer;
@@ -182,24 +207,6 @@ hr {
 
 .page-spacer {
     width: 60%;
-}
-
-input {
-    border: var(--border);
-    background-color: var(--layer-1);
-    padding: var(--padding-s);
-    border-radius: var(--border-radius);
-    color: var(--text-color);
-    box-shadow: var(--box-shadow);
-}
-
-select {
-    border: var(--border);
-    background-color: var(--layer-1);
-    padding: var(--padding-s);
-    border-radius: var(--border-radius);
-    color: var(--text-color);
-    box-shadow: var(--box-shadow);
 }
 
 .centered-section {
@@ -301,7 +308,11 @@ select {
     }
 
     .navbar-button {
+        font-size: 0.9rem;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .word-button, .word-button-active, input {
         font-size: 1.2rem;
-        padding: 20px 4px 20px 4px;
     }
 }
