@@ -2,6 +2,12 @@ import type { PageServerLoad } from './$types';
 import { error } from '@sveltejs/kit';
 
 export const load: PageServerLoad = async ({ params, locals }) => {
+    // Authentication
+    if (!locals.pb.authStore.isValid || !locals.pb.authStore.record) {
+        throw error(401, 'Unauthorized request.');
+    }
+
+    const COURSE_ID = locals.pb.authStore.record.course;
     const LESSON_ID = params.id;
 
     try {
@@ -15,7 +21,7 @@ export const load: PageServerLoad = async ({ params, locals }) => {
 
         // Fetch all vocab data for the course to serve as a dictionary during the exercises
         const vocabData = await locals.pb.collection('vocabulary').getFullList({
-            filter: `course = "${locals.user.course}"`
+            filter: `course = "${COURSE_ID}"`
         });
 
         const vocabMap = vocabData.map((vocab: any) => ({

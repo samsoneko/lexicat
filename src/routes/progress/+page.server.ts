@@ -18,12 +18,33 @@ export const load: PageServerLoad = async ({ locals }) => {
             filter: `user = "${userId}" && lesson.chapter.course = "${COURSE_ID}"`
         });
 
+        // Fetch all user words for the current user and course
+        const userWords = await locals.pb.collection('user_words').getFullList({
+            filter: `user = "${userId}" && word.course = "${COURSE_ID}"`
+        });
+
+        const vocabData = await locals.pb.collection('vocabulary').getFullList({
+            filter: `course = "${COURSE_ID}"`
+        });
+
+        const lessonData = await locals.pb.collection('lessons').getFullList({
+            filter: `chapter.course = "${COURSE_ID}"`
+        });
+
+        const totalUserVocabulary = userWords.length;
+        const totalCourseVocabulary = vocabData.length;
+        const totalCourseLessons = lessonData.length;
+
         return {
             progress: userHistory.map((entry: any) => ({
                 lesson: entry.lesson,
                 score: entry.score,
-                time: entry.created
-            }))
+                time: entry.created,
+                type: entry.type
+            })),
+            totalUserVocabulary,
+            totalCourseVocabulary,
+            totalCourseLessons
         };
         
     } catch (err: any) {

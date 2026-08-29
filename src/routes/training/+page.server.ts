@@ -17,11 +17,18 @@ export const load: PageServerLoad = async ({ locals }) => {
             filter: `user = "${userId}" && word.course = "${COURSE_ID}"`
         });
 
+        const vocabData = await locals.pb.collection('vocabulary').getFullList({
+            filter: `course = "${COURSE_ID}"`
+        });
+
+        const totalCourseVocabulary = vocabData.length;
+
         return {
             wordMap: userWords.map((entry: any) => ({
                 interval: entry.interval,
                 updated: entry.updated
-            }))
+            })),
+            totalCourseVocabulary
         };
         
     } catch (err: any) {

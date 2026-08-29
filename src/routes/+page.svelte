@@ -48,13 +48,11 @@
     }
 </script>
 
-<div class="chapter-section">
-    {#if data.user}
-        <h1>Hi, {data.user.username}!</h1>
-        <hr class="page-spacer">
-        <p>Ready to improve your language capabilities?</p>
-    {/if}
-</div>
+{#if data.user}
+    <h1>Hi, {data.user.username}!</h1>
+    <hr class="page-spacer">
+    <p class="center-text">Ready to improve your language capabilities?</p>
+{/if}
 
 {#if data.chapters.length === 0}
     <p>No content available yet.</p>
@@ -109,12 +107,12 @@
 <style>
     .chapter-section {
         text-align: center;
-        margin-bottom: 48px;
         display: grid;
         place-items: center;
     }
 
     .chapter-title {
+        margin-top: 48px;
         text-align: center;
         margin-bottom: 0px;
     }
