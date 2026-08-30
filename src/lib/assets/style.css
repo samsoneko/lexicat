@@ -311,7 +311,7 @@ select {
         padding: 20px 0px 20px 0px;
     }
 
-    .word-button, .word-button-active, input {
+    .word-button, .word-button-active {
         font-size: 1.2rem;
     }
 }

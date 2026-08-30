@@ -18,5 +18,10 @@ export function load({ data, url }) {
         throw redirect(303, '/course');
     }
 
+    // Redirecting to home page if the user is logged in and tries to access login or register
+    if ((user && isLoginPage) || (user && isRegisterPage)) {
+        throw redirect(303, '/');
+    }
+
     return { user, theme };
 }
