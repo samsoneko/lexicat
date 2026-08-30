@@ -34,7 +34,7 @@
         <option value="arrange">Arrange</option>
         <option value="pairs">Pairs</option>
     </select>
-    <input type="number" min="1" max="10" bind:value={selectedNumber}/>
+    <input type="number" min="1" max="20" bind:value={selectedNumber}/>
     <button class="default-button" onclick={() => goto("/training/exercise/" + selectedExercise + "/" + selectedNumber)}>Start exercises <i class="fas fa-dumbbell"></i></button>
 </div>
 </section>
