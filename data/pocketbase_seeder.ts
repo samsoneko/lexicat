@@ -5,17 +5,19 @@ const pb = new PocketBase('http://127.0.0.1:8090');
 // Authenticate as admin to bypass collection API rules
 await pb.admins.authWithPassword('caesaranton700@yahoo.de', 'wawD2pwy');
 
-const vocabulary = JSON.parse(fs.readFileSync('lx_vocabulary.json', 'utf-8'));
-const curriculum = JSON.parse(fs.readFileSync('lx_curriculum.json', 'utf-8'));
-const COURSE_ID = 'lx';
+const vocabulary = JSON.parse(fs.readFileSync('lx_vocabulary.json', 'utf-8')); // TO BE CHANGED FOR CUSTOM CURRICULUM
+const curriculum = JSON.parse(fs.readFileSync('lx_curriculum.json', 'utf-8')); // TO BE CHANGED FOR CUSTOM VOCABULARY
+const COURSE_ID = 'lx'; // TO BE CHANGED FOR CUSTOM CURRICULUM
+const COURSE_NAME = 'lexin'; // TO BE CHANGED FOR CUSTOM CURRICULUM
 
 async function importData() {
 	// Create course
 	await pb.collection('courses').create({
 		id: COURSE_ID,
-		name: "lexin"
+		name: COURSE_NAME
 	});
-	// Create second dummy course
+	// Create empty dummy course to demonstrate course changing capabilities
+	// CAN BE DELETED WHEN IMPORTING CUSTOM CONTENT
 	await pb.collection('courses').create({
 		id: "sg",
 		name: "sangot"

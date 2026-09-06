@@ -1,93 +1,63 @@
 # lexica
 
+A simple webapp for language learning, enabling administrators to set up custom courses and upload their own language curriculums. It includes functionality for a custom learning tree divided into chapters, lessons and different exercise types as well as vocabulary training via the SM2 algorithm and progress tracking. A simple, extendible account system is used to save progress and statistics.
 
+Built using [SvelteKit](https://svelte.dev/docs/kit/introduction) and [PocketBase](https://pocketbase.io/).
 
-## Getting started
+## Development Setup
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+For both development and deployment of the SvelteKit part of the app, Node.js has to be installed. This app was build using Node.js v24.18.0, but a newer version should work as well.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+As for PocketBase, the repository already includes two executables. "pocketbase.exe" for Windows and "pocketbase" for Linux. The irrelevant executable can simply be deleted from the cloned repository.
 
-## Add your files
+Before starting the development environment, the dependencies for pocketbase have to be installed using `npm install pocketbase`
 
-* [Create](https://docs.gitlab.com/user/project/repository/web_editor/#create-a-file) or [upload](https://docs.gitlab.com/user/project/repository/web_editor/#upload-a-file) files
-* [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+After cloning the repository, the project can be started from inside its root directory by executing two commands in separate terminals:
+1. `./pocketbase serve` (Starts the PocketBase database service)
+2. `npm run dev` (Starts the SvelteKit development server on localhost:5173)
 
+The development environment is now running, and any changes inside the project files will be reflected immediately in the browser.
+
+> [!NOTE]
+> The database already comes with a preimported curriculum and vocabulary, as well as a demo user, to demonstrate the functional capabilities of the application. All of the content of the database, including the administrator login and the demo data setup inside `data/` can simply be deleted and replaced by a personalized curriculum, as explained in the section about [Content Creation](#content-creation).
+
+## Building
+
+The SvelteKit part of the project can be build by executing `npm run build` inside of the root directory. Currently, the project uses `@sveltejs/adapter-node` for the build process. This may change depending on customizations.
+
+The build command produces a `build/`-directory that contains the finalized SvelteKit files for deploying the project.
+
+PocketBase does not need further steps for deployment, as it is simple enough to be run from a single executable.
+
+After building, the build can be tested by running:
+1. `./pocketbase serve` (Same as in development)
+2. `npm run preview` (Uses the build files instead of the development directory)
+
+However, this preview mode still happens within the development environment and does not guarantee a working deployment. To truly run the project independently, the [Deployment](#deployment) section should be consulted.
+
+## Deployment
+
+For deployment, the folder structure of the app looks as follows:
 ```
-cd existing_repo
-git remote add origin https://gitlab.gwdg.de/anton.caesar/lexica.git
-git branch -M main
-git push -uf origin main
+lexica/
+    build/
+    pb_data
+    pb_migrations
+    pocketbase
 ```
 
-## Integrate with your tools
+- `build/` is the folder produced by building the project using `npm run build`
+- `pb_data` and `pb_migrations` are the two folders PocketBase uses for managing its content and state
+- `pocketbase` is the executable for PocketBase, either the one for Linux or the one for Windows
 
-* [Set up project integrations](https://gitlab.gwdg.de/anton.caesar/lexica/-/settings/integrations)
+This setup assumes that the content of pocketbase has already been created and imported into the database. To learn how this works, consult the section about [Content Creation](#content-creation).
 
-## Collaborate with your team
+With the folder structure set up, the project can be deployed by running:
+1. `./pocketbase serve` (Same as in development)
+2. `$env:ORIGIN="http://localhost:3000"; npm start` (Starting the node server with the correct environment variable)
 
-* [Invite team members and collaborators](https://docs.gitlab.com/user/project/members/)
-* [Create a new merge request](https://docs.gitlab.com/user/project/merge_requests/creating_merge_requests/)
-* [Automatically close issues from merge requests](https://docs.gitlab.com/user/project/issues/managing_issues/#closing-issues-automatically)
-* [Enable merge request approvals](https://docs.gitlab.com/user/project/merge_requests/approvals/)
-* [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+## Content Creation
 
-## Test and Deploy
+In its default state, the app contains a preimported curriculum and vocabulary, as well as a demo user, to demonstrate its functionality. This demo content is located inside of `data/`, including a file for seeding the database called `pocketbase_seeder.ts`.
 
-Use the built-in continuous integration in GitLab.
-
-* [Get started with GitLab CI/CD](https://docs.gitlab.com/ci/quick_start/)
-* [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/user/application_security/sast/)
-* [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/topics/autodevops/requirements/)
-* [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/user/clusters/agent/)
-* [Set up protected environments](https://docs.gitlab.com/ci/environments/protected_environments/)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Custom content can simply be created by following the simple structure of the demo files `lx_currisulum.json` and `lx_vocabulary.json` that display how the chapters, lessons and exercises as well as the vocabulary need to look like.
