@@ -1,9 +1,6 @@
 node_modules
 /.vscode
 
-# Ignore the local Windows executable
-/pocketbase.exe
-
 # Ignore actual database files and uploaded user files
 pb_data/data.db
 pb_data/data.db-journal

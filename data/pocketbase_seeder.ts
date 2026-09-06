@@ -3,12 +3,12 @@ import fs from 'fs';
 
 const pb = new PocketBase('http://127.0.0.1:8090');
 // Authenticate as admin to bypass collection API rules
-await pb.admins.authWithPassword('caesaranton700@yahoo.de', 'wawD2pwy');
+await pb.admins.authWithPassword('EMAIL', 'PASSWORD'); // CHANGE THIS WITH ADMIN DATA
 
-const vocabulary = JSON.parse(fs.readFileSync('lx_vocabulary.json', 'utf-8')); // TO BE CHANGED FOR CUSTOM CURRICULUM
-const curriculum = JSON.parse(fs.readFileSync('lx_curriculum.json', 'utf-8')); // TO BE CHANGED FOR CUSTOM VOCABULARY
-const COURSE_ID = 'lx'; // TO BE CHANGED FOR CUSTOM CURRICULUM
-const COURSE_NAME = 'lexin'; // TO BE CHANGED FOR CUSTOM CURRICULUM
+const vocabulary = JSON.parse(fs.readFileSync('lx_vocabulary.json', 'utf-8')); // CHANGE THIS FOR CUSTOM CURRICULUM
+const curriculum = JSON.parse(fs.readFileSync('lx_curriculum.json', 'utf-8')); // CHANGE THIS FOR CUSTOM CURRICULUM
+const COURSE_ID = 'lx'; // CHANGE THIS FOR CUSTOM CURRICULUM
+const COURSE_NAME = 'lexin'; // CHANGE THIS FOR CUSTOM CURRICULUM
 
 async function importData() {
 	// Create course

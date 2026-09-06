@@ -16,10 +16,18 @@ After cloning the repository, the project can be started from inside its root di
 1. `./pocketbase serve` (Starts the PocketBase database service)
 2. `npm run dev` (Starts the SvelteKit development server on localhost:5173)
 
+Starting PocketBase for the first time will open up a browser window prompting the user to set up the Administrator access, which the user can freely choose.
+
 The development environment is now running, and any changes inside the project files will be reflected immediately in the browser.
 
 > [!NOTE]
-> The database already comes with a preimported curriculum and vocabulary, as well as a demo user, to demonstrate the functional capabilities of the application. All of the content of the database, including the administrator login and the demo data setup inside `data/` can simply be deleted and replaced by a personalized curriculum, as explained in the section about [Content Creation](#content-creation).
+> The initial database will be empty, but the project already comes with a demo curriculum and vocabulary inside `data/` that can be used to demonstrate the functional capabilities of the application. To learn how this data can be imported, read the section about [Importing Content](#importing-content). Instead, all of the demo content can also be ignored and replaced by a personalized curriculum, as explained in the section about [Content Creation](#content-creation).
+
+## Importing Content
+
+By default, the database is empty after the initial setup, but is already configured to work with the data structure used in the project. Therefore, the demo content from `data/` can simply be uploaded to the database.
+
+For this, the included file `pocketbase_seeder.ts` can be used. It is already configured to access the included demo files and upload their content to PocketBase. The only necessary modification is to update the admin credentials in line 6 to reflect the custom admin login chosen by the user. After that, execute the file using `node pocketbase_seeder.ts` inside of `data/` while PocketBase is running, and the curriculum and vocabulary should be imported successfully.
 
 ## Building
 
@@ -50,14 +58,14 @@ lexica/
 - `pb_data` and `pb_migrations` are the two folders PocketBase uses for managing its content and state
 - `pocketbase` is the executable for PocketBase, either the one for Linux or the one for Windows
 
-This setup assumes that the content of pocketbase has already been created and imported into the database. To learn how this works, consult the section about [Content Creation](#content-creation).
+This setup assumes that the content of pocketbase has already been imported into the database, so that it is located inside of `pb_data`. To learn how this works, consult the section about [Importing Content](#importing-content) and [Content Creation](#content-creation).
 
 With the folder structure set up, the project can be deployed by running:
 1. `./pocketbase serve` (Same as in development)
-2. `$env:ORIGIN="http://localhost:3000"; npm start` (Starting the node server with the correct environment variable)
+2. `$env:ORIGIN="http://localhost:3000"; node build` (Starting the node server with the correct environment variable)
 
 ## Content Creation
 
-In its default state, the app contains a preimported curriculum and vocabulary, as well as a demo user, to demonstrate its functionality. This demo content is located inside of `data/`, including a file for seeding the database called `pocketbase_seeder.ts`.
-
 Custom content can simply be created by following the simple structure of the demo files `lx_currisulum.json` and `lx_vocabulary.json` that display how the chapters, lessons and exercises as well as the vocabulary need to look like.
+
+After creating custom content, the file `pocketbase_seeder.ts` can be used to upload it to the database. For this, the lines marked with **CHANGE THIS FOR CUSTOM CURRICULUM** need to be modified to reflect the file paths and values of the custom curriculum.
