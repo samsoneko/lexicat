@@ -11,7 +11,7 @@
 {#if data.user}
     <!-- User is logged in -->
 
-    <h3>Account Information</h3>
+    <h2>Account Information</h2>
     <section class="centered-section">
         <div class="account-info-tile">
             <p class="account-info-type">Username:</p>
@@ -27,7 +27,7 @@
         </div>
     </section>
 
-    <h3>Options</h3>
+    <h2>Options</h2>
     <section class="options-section">
         <!-- Theme Toggle Form Submit -->
         <form method="POST" action="/api/theme" style="display: inline">
@@ -38,6 +38,8 @@
         </form>
         
         <button class="default-button option-button" onclick={() => goto("/course")}>Change my course <i class="fa-solid fa-code-compare"></i></button>
+
+        <button class="default-button option-button" onclick={() => goto("/about")}>Privacy Policy, Accessibility & Imprint <i class="fa-solid fa-info"></i></button>
         
         <!-- The Logout button form -->
         <form method="POST" action="/logout">
